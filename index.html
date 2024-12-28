@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReIPopov | Главная страница</title>
+	<link rel="shortcut icon" href="/img/siteLogo.webp">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/burger.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/toggle-mode.css">
+
+	<!-- Метатеги -->
+	<meta property="og:title" content="Rei Popov | Портфолио">
+	<meta property="og:description" content="Описание страницы">
+	<meta property="og:image" content="img/LogoRei-2.webp">
+	<meta property="og:url" content="https://daulet050kz.github.io">
+	<meta property="og:type" content="website">
+
+	<style>
+		#category {
+			overflow-x: hidden;
+			flex-wrap: nowrap;
+			min-width: 350px;
+			max-height: auto;
+			width: 100%;
+		}
+		#categoryScroll > button {
+			margin: 0 5px;
+			background-color: #ffbe41;
+			border: none;
+			outline: none;
+			border-radius: 50%;
+			font-size: 22px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			cursor: pointer;
+			padding: 5px;
+		}
+
+		#category > a.block__interactive {
+			transition: 1s;
+		}
+
+		#category > a.block__interactive > img {
+			filter: grayscale(100%);
+		}
+
+		#category > a.block__interactive:hover > img {
+			filter: grayscale(0%);
+		}
+	</style>
+</head>
+<body id="body">
+	<header id="header">
+		<img src="/img/logo.webp" alt="" width="103px" height="24px">
+		<div class="navbar">
+			<ul>
+				<li><a href="/index.html" style="color: #fff; border-bottom: 2px solid #ffbe41; opacity: 1;">Главная</a></li>
+				<li><a href="/templates/Art/page-1/index.html">Арты</a></li>
+				<li><a href="/templates/Drawings/page-1/index.html">Рисунки</a></li>
+				<li><a href="/templates/3D/page-1/index.html">3D Работы</a></li>
+				<li><a href="/templates/Design/page-1/index.html">Дизайн</a></li>
+				<li><a href="/templates/Lettering/page-1/index.html">Леттеринг</a></li>
+				<li><a href="/templates/Logo/page-1/index.html">Логотипы</a></li>
+				<li><a href="/templates/UX/page-1/index.html">Макеты сайтов</a></li>
+				<li><a href="/templates/BookDesign/page-1/index.html">Дизайн книги</a></li>
+				<li><a href="/templates/Autobiography/index.html">Автобиография</a></li>
+				<li><a href="/templates/Blog/page-1/index.html">Блог</a></li>
+				<li><a href="/templates/CONTACTS.html">Контакты</a></li>
+			</ul>
+		</div>
+		<i class="fa-solid fa-sun" id="toggle-mode"></i>
+		<div id="nav-icon6">
+		    <span></span>
+		</div>
+	</header>
+
+	<div id="burger">
+		<div>
+			<a href="/index.html"><span style="color: #ffbe41;">•</span> Главная</a>
+			<h2 id="burger__portfolio-btn">Мое портолио <i class="fa-solid fa-caret-down" style="transition: .3s;"></i></h2>
+			<div id="burger__portfolio" style="height: 0%; display: none;">
+				<a id="bpi__1" href="/templates/Art/page-1/index.html"><span>•</span> Арты</a>
+				<a id="bpi__2" href="/templates/Drawings/page-1/index.html"><span>•</span> Рисунки</a>
+				<a id="bpi__3" href="/templates/3D/page-1/index.html"><span>•</span> 3D Работы</a>
+				<a id="bpi__4" href="/templates/Design/page-1/index.html"><span>•</span> Дизайн</a>
+				<a id="bpi__5" href="/templates/Lettering/page-1/index.html"><span>•</span> Леттеринг</a>
+				<a id="bpi__6" href="/templates/Logo/page-1/index.html"><span>•</span> Логотипы</a>
+				<a id="bpi__7" href="/templates/UX/page-1/index.html"><span>•</span> Макеты сайтов</a>
+				<a id="bpi__8" href="/templates/BookDesign/page-1/index.html"><span>•</span> Дизайн книги</a>
+			</div>
+
+			<a href="/templates/Autobiography/index.html"><span>•</span> Автобиография</a>
+			<a href="/templates/Blog/page-1/index.html"><span>•</span> Блог</a>
+			<a href="/templates/CONTACTS.html"><span>•</span> Контакты</a>
+			
+		</div>
+		<footer id="footer">
+			<div class="contacts">
+				<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+				<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+				<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+				<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+				<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+			</div>
+		</footer>
+	</div>
+
+	<main id="main" style="margin-top: 0;">
+		<div class="intro" style="background-image: url('/img/intro.webp'); background-size: cover; width: 100%; height: 100vh;">
+			<h1>PORTFOLIO</h1>
+			<span>HI, MY NAME IS REI - GRAPHIC DESIGNER</span>
+			<a href="">Behance</a>
+		</div>
+		<div class="container">
+			<section class="section__1">
+				<h1>КАТЕГОРИИ РАБОТ</h1>
+				<div id="category">
+					<a href="/templates/Art/page-1/index.html" class="block__interactive cF1" style="margin: 10px;">
+						<img src="img/categories/Preview-Art.jpg" alt="">
+						<h1>Арты</h1>
+					</a>
+					<a href="/templates/Drawings/page-1/index.html" class="block__interactive cF2" style="margin: 10px;">
+						<img src="img/categories/Preview-Drawings.jpg" alt="">
+						<h1>Рисунки</h1>
+					</a>
+					<a href="/templates/Design/page-1/index.html" class="block__interactive cF4" style="margin: 10px;">
+						<img src="img/categories/Preview-Design.jpg" alt="">
+						<h1>Дизайн</h1>
+					<a href="/templates/3D/page-1/index.html" class="block__interactive cF3" style="margin: 10px;">
+						<img src="img/categories/Preview-3D.jpg" alt="">
+						<h1>3D Работы</h1>
+					</a>
+					<a href="/templates/Lettering/page-1/index.html" class="block__interactive cF5" style="margin: 10px;">
+						<img src="img/categories/Preview-Lettering.jpg" alt="">
+						<h1>Леттеринг</h1>
+					</a>
+					<a href="/templates/UX/page-1/index.html" class="block__interactive cF6" style="margin: 10px;">
+						<img src="img/categories/Preview-UX.jpg" alt="">
+						<h1>Макеты сайтов</h1>
+					</a>
+					<a href="/templates/BookDesign/page-1/index.html" class="block__interactive cF7" style="margin: 10px;">
+						<img src="img/categories/Preview-BookDesign.jpg" alt="">
+						<h1>Дизайн книги</h1>
+					</a>
+					<a href="/templates/Logo/page-1/index.html" class="block__interactive cF8" style="margin: 10px;">
+						<img src="img/categories/Preview-Logo.jpg" alt="">
+						<h1>Логотипы</h1>
+					</a>
+					<a href="/templates/Blog/page-1/index.html" class="block__interactive cF9" style="margin: 10px;">
+						<img src="img/categories/Preview-Blog.jpg" alt="">
+						<h1>Блог</h1>
+					</a>
+				</div>
+				<div id="categoryScroll" style="flex-wrap: nowrap; flex-direction: row;">
+					<button id="categoryLeft">
+						<i class="fa-solid fa-arrow-left"></i>
+					</button>
+					<button id="categoryRight">
+						<i class="fa-solid fa-arrow-right"></i>
+					</button>
+				</div>
+			</section>
+			<section class="section__2">
+				<h1>ОБ АВТОРЕ</h1>
+				<div>
+					<img src="/img/siteLogo.webp" alt="" width="285px" height="285px">
+					<div style="display: flex; flex-direction: column;">
+						<p style="margin-top: 5px;">Вы попали в мой уголок творчества. Я делюсь своим творчеством с общественностью, стараясь захватить всевозможные стороны такого направления, как "Дизайн"</p>
+						<p style="margin: 5px 0;">• Хотите оформить свой проект, например: канал, группу, страницу, сайт, обложку для альбома (или что либо другое)?</p>
+						<p style="margin: 5px 0;">• Или же сделать крутой арт, которым вы сможете украсить свои соц.сети или домашний интерьер, а также сделать отличный подарок другу/девушке (и не только), который запомнится на долго.</p>
+						<p style="margin: 5px 0;">• Опыт работы в данной сфере 3 года.</p>
+						<p style="margin: 5px 0;">• Работаю в таких программах, как: Illustrator, Photoshop, CorelDRAW, Cinema 4D, Blender.</p>
+						<a href="/templates/Autobiography/index.html" style="margin-top: 5px; border-radius: 30px;" class="button">Автобиография</a>
+					</div>
+				</div>
+				<div style="margin-top: 10px;">
+					<img src="/img/Сертификат.webp" alt="" width="285px" height="285px">
+					<div style="display: flex; flex-direction: column;">
+						<p style="margin-top: 5px; font-weight: 700;" >Сертификат об успешном оконании графического дизайна в школе OneClick</p>
+						<p style="margin: 5px 0;">Я прошел курсы графического дизайна в школе OneClick, где значтельно расширил свои навыки и знания в области дизайна. В ходе обучение я овладел работой с такими программами, как:</p>
+						<p style="margin: 5px 0;">• Adobe Photoshop</p>
+						<p style="margin: 5px 0;">• Adobe InDesign</p>
+						<p style="margin: 5px 0;">• Adobe Illustrator</p>
+						<p style="margin: 5px 0;">• CorelDRAW</p>
+						<p style="margin: 5px 0;">Курсы в OneClick дали мне всесторонее понимание процессов и инструментов, необходимых для профессиональной работы в сфере графического дизайна.</p>
+					</div>
+				</div>
+			</section>
+			<section class="section__3" style="width: 1152px;">
+				<h1>МОИ НАВЫКИ</h1>
+				<div style="width: 100%; justify-content: center;">
+					<div class="section__3-skills">
+						<span>— Графический дизайн</span>
+						<span>— Иллюстрация и концепт арт</span>
+						<span>— Фотобаш и фотоманипуляции</span>
+						<span>— Лезу в 3D и анимацию</span>
+						<span>— Фотографирую</span>
+						<span>— UХ/UI дизайн макетов сайтов</span>
+						<span>— Оформление соц. сетей</span>
+						<span>— Леттеринг</span>
+					</div>
+					<div>
+						<div class="section__diagramm Photoshop">
+							<h4>90</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Photoshop.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm Illustrator">
+							<h4>80</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Illustrator.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm CorelDraw">
+							<h4>80</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/CorelDraw.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm Figma">
+							<h4>70</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Figma.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm InDesign">
+							<h4>60</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/InDesign.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm Blender">
+							<h4>50</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Blender.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section__4" style="position: relative;">
+				<h1>ОТЗЫВЫ КЛИЕНТОВ</h1>
+				<div>
+					<div class="block__interactive review_1" style="margin: 10px;">
+						<img src="img/Reviews/Review_1.png" alt="">
+						<h3>Андрей Черепанов</h3>
+						<span>Заказывал у Rei арт-коллажи со своим персонажем из игры. Все детали обсудили предварительно, в процессе вносили правки. Работы выполнены быстро и в срок. Все пожелания учтены. Претензий к качеству нет. На руки получил много вариантов работ + PSD. Рекомендую.</span>
+					</div>
+					<div class="block__interactive review_2" style="margin: 10px;">
+						<img src="img/Reviews/Review_2.png" alt="">
+						<h3>Руслан Днепровский</h3>
+						<span>Изволю оставить свой отзыв.Мне очень понравилась работа автора в плане обработки и оформления моей группы "Вк" и канала на "YouTube". Rei сделал все качественно и в сроки, что удивительно, ведь это не так просто. При этом? Rei сделал сразу несколько вариантов шапок (3 шт) и логотип выполненной в "Векторной графике". Я очень доволен итоговому результату. От всего сердца говорю Спасибо!</span>
+					</div>
+					<div class="block__interactive review_3" style="margin: 10px;">
+						<img src="img/Reviews/Review_3.png" alt="">
+						<h3>Виталичек Колесников</h3>
+						<span>Я не очень многословен, но парень знает свое дело, результат просто блеск, мне очень понравилось! Одним словом - буду обращаться еще и вам советую! Скинул все, и там где нужно было что-то доделать - доделали, отзывчивый, исполнительный и понимающий - это Rei</span>
+					</div>
+					<div class="block__interactive review_4" style="transform: translateY(0px); margin: 10px;">
+						<img src="img/Reviews/Argentum.jpg" alt="">
+						<h3>Даулет Боран</h3>
+						<span>Rei - Художник знающий свое дело, не раз ходил к нему за дизайном и не раз не был не удовлетворён итогом, хороший профессионал, знающий свое дело.</span>
+					</div>
+					<div class="block__interactive review_5" style="transform: translateY(0px); margin: 10px;">
+						<img src="" alt="">
+						<h3>Затычка</h3>
+						<span>Затычка</span>
+					</div>
+					<div class="block__interactive review_6" style="transform: translateY(0px); margin: 10px;">
+						<img src="" alt="">
+						<h3>Затычка</h3>
+						<span>Затычка</span>
+					</div>
+					<div class="block__interactive review_7" style="transform: translateY(0px); margin: 10px;">
+						<img src="" alt="">
+						<h3>Затычка</h3>
+						<span>Затычка</span>
+					</div>
+					<div class="block__interactive review_8" style="transform: translateY(0px); margin: 10px;">
+						<img src="" alt="">
+						<h3>Затычка</h3>
+						<span>Затычка</span>
+					</div>
+					<div class="block__interactive review_9" style="transform: translateY(0px); margin: 10px;">
+						<img src="" alt="">
+						<h3>Затычка</h3>
+						<span>Затычка</span>
+					</div>
+				</div>
+				<div class="reviews_btns PC">
+					<label id="reviews__label-1" style="background-color: #ffbe41;">1</label>
+					<label id="reviews__label-2" style="margin: 0 10px; background-color: #bdbdbd;">2</label>
+					<label id="reviews__label-3" style="background-color: #bdbdbd;">3</label>
+				</div>
+				<div class="reviews_btns other" style="position: absolute; bottom: 10px; left: 50%; transform: translate(-50%, -50%);justify-content: space-around; align-items: center; padding: 5px;">
+					<label id="reviews__label-left" style="background-color: #bdbdbd;"><i class="fa-solid fa-arrow-left"></i></label>
+					<label id="reviews__label-right" style="background-color: #bdbdbd;"><i class="fa-solid fa-arrow-right"></i></label>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer id="footer">
+		<img src="/img/Pod.webp" alt="">
+		<div class="contacts">
+			<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+			<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+			<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+			<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+			<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+		</div>
+		<span style="color: #fff;">©2023 Portfolio - Все права защищены</span>
+	</footer>
+
+	<div class="enter__animation" style="background-color: #000; position: absolute; position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height: 100vh; transition: 1s; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+		<img id="enter__logo" src="/img/LogoRei-2.webp" alt="" style="opacity: 0; transition: 1s;">
+	</div>
+
+	<div class="stage__bar">
+		<h4 class="stage__0">0</h4>
+		<h4 class="stage__1">1</h4>
+		<h4 class="stage__2">2</h4>
+		<h4 class="stage__3">3</h4>
+		<h4 class="stage__4">4</h4>
+	</div>
+	<script src="/js/links.js"></script>
+	<script>
+		const intro = document.querySelector('.intro')
+		const header = document.querySelector('#header')
+
+		document.querySelector('.stage__0').addEventListener('click', function(){
+			document.querySelector('.intro').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__1').addEventListener('click', function(){
+			document.querySelector('.section__1').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__2').addEventListener('click', function(){
+			document.querySelector('.section__2').scrollIntoView({ behavior: "smooth", block: "start" });
+		});
+		document.querySelector('.stage__3').addEventListener('click', function(){
+			document.querySelector('.section__3').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__4').addEventListener('click', function(){
+			document.querySelector('.section__4').scrollIntoView({ behavior: "smooth", block: "center" });
+
+		});
+
+
+		let prevScrollpos = window.pageYOffset;
+		function handleResize() {
+		    if (window.matchMedia('(max-width: 1023px)').matches) {
+				const diagramm_photoshop = document.querySelector('.section__diagramm.Photoshop').querySelector('.diagramm')
+				const diagramm_illustrator = document.querySelector('.section__diagramm.Illustrator').querySelector('.diagramm')
+				const diagramm_corelDraw = document.querySelector('.section__diagramm.CorelDraw').querySelector('.diagramm')
+				const diagramm_figma = document.querySelector('.section__diagramm.Figma').querySelector('.diagramm')
+				const diagramm_indesign = document.querySelector('.section__diagramm.InDesign').querySelector('.diagramm')
+				const diagramm_blender = document.querySelector('.section__diagramm.Blender').querySelector('.diagramm')
+
+				window.onscroll = function() {
+					if(250 < window.pageYOffset){
+						header.style.backgroundColor = '#222222';
+					}else{
+						header.style.backgroundColor = '';
+					};
+					if (2800 < window.pageYOffset) {
+						setTimeout(() => {
+							diagramm_photoshop.style.width = '90%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.width = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.width = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.width = '70%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.width = '60%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.width = '50%'
+						}, 100);
+					}else {
+						setTimeout(() => {
+							diagramm_photoshop.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.width = '0%'
+						}, 100);
+					}
+				}
+
+		    	document.querySelector('.review_1').style.marginLeft = '-10px';
+		    	document.querySelector('#reviews__label-left').onclick = function() {
+		    		if(document.querySelector('.review_1').style.marginLeft === '-2970px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-2600px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-2600px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-2230px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-2230px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-1860px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-1860px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-1490px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-1490px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-1120px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-1120px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-750px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-750px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-380px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-380px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-10px';
+		    		}
+				};
+		    	document.querySelector('#reviews__label-right').onclick = function() {
+		    		if(document.querySelector('.review_1').style.marginLeft === '-2600px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-2970px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-2230px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-2600px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-1860px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-2230px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-1490px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-1860px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-1120px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-1490px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-750px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-1120px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-380px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-750px';
+		    		}else if(document.querySelector('.review_1').style.marginLeft === '-10px'){
+		    			document.querySelector('.review_1').style.marginLeft = '-380px';
+		    		}
+				};
+
+		    } else {
+				const diagramm_photoshop = document.querySelector('.section__diagramm.Photoshop').querySelector('.diagramm')
+				const diagramm_illustrator = document.querySelector('.section__diagramm.Illustrator').querySelector('.diagramm')
+				const diagramm_corelDraw = document.querySelector('.section__diagramm.CorelDraw').querySelector('.diagramm')
+				const diagramm_figma = document.querySelector('.section__diagramm.Figma').querySelector('.diagramm')
+				const diagramm_indesign = document.querySelector('.section__diagramm.InDesign').querySelector('.diagramm')
+				const diagramm_blender = document.querySelector('.section__diagramm.Blender').querySelector('.diagramm')
+				
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+					if(300 < window.pageYOffset){
+						header.style.backgroundColor = '#222222';
+					}else{
+						header.style.backgroundColor = '';
+					};
+					if (1420 < window.pageYOffset) {
+						setTimeout(() => {
+							diagramm_photoshop.style.height = '90%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.height = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.height = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.height = '70%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.height = '60%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.height = '50%'
+						}, 100);
+					}else {
+						setTimeout(() => {
+							diagramm_photoshop.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.height = '0%'
+						}, 100);
+					}
+				}
+				document.getElementById('reviews__label-1').onclick = function(){
+					document.querySelector('.review_1').style.transform = 'translateY(calc(0%))'
+					document.querySelector('.review_2').style.transform = 'translateY(calc(0%))'
+					document.querySelector('.review_3').style.transform = 'translateY(calc(0%))'
+
+					document.querySelector('.review_4').style.transform = 'translateY(calc(0% + 0px))'
+					document.querySelector('.review_5').style.transform = 'translateY(calc(0% + 0px))'
+					document.querySelector('.review_6').style.transform = 'translateY(calc(0% + 0px))'
+
+					document.querySelector('.review_7').style.transform = 'translateY(calc(0% + 0px))'
+					document.querySelector('.review_8').style.transform = 'translateY(calc(0% + 0px))'
+					document.querySelector('.review_9').style.transform = 'translateY(calc(0% + 0px))'
+
+					document.getElementById('reviews__label-1').style.backgroundColor = '#ffbe41'
+					document.getElementById('reviews__label-2').style.backgroundColor = '#bdbdbd'
+					document.getElementById('reviews__label-3').style.backgroundColor = '#bdbdbd'
+				}
+				document.getElementById('reviews__label-2').onclick = function(){
+					document.querySelector('.review_1').style.transform = 'translateY(calc(-100% - 20px))'
+					document.querySelector('.review_2').style.transform = 'translateY(calc(-100% - 20px))'
+					document.querySelector('.review_3').style.transform = 'translateY(calc(-100% - 20px))'
+
+					document.querySelector('.review_4').style.transform = 'translateY(calc(-100% - 20px))'
+					document.querySelector('.review_5').style.transform = 'translateY(calc(-100% - 20px))'
+					document.querySelector('.review_6').style.transform = 'translateY(calc(-100% - 20px))'
+
+					document.querySelector('.review_7').style.transform = 'translateY(calc(-100% - 20px))'
+					document.querySelector('.review_8').style.transform = 'translateY(calc(-100% - 20px))'
+					document.querySelector('.review_9').style.transform = 'translateY(calc(-100% - 20px))'
+
+					document.getElementById('reviews__label-1').style.backgroundColor = '#bdbdbd'
+					document.getElementById('reviews__label-2').style.backgroundColor = '#ffbe41'
+					document.getElementById('reviews__label-3').style.backgroundColor = '#bdbdbd'
+				}
+				document.getElementById('reviews__label-3').onclick = function(){
+					document.querySelector('.review_1').style.transform = 'translateY(calc(-200% - 40px))'
+					document.querySelector('.review_2').style.transform = 'translateY(calc(-200% - 40px))'
+					document.querySelector('.review_3').style.transform = 'translateY(calc(-200% - 40px))'
+
+					document.querySelector('.review_4').style.transform = 'translateY(calc(-200% - 40px))'
+					document.querySelector('.review_5').style.transform = 'translateY(calc(-200% - 40px))'
+					document.querySelector('.review_6').style.transform = 'translateY(calc(-200% - 40px))'
+
+					document.querySelector('.review_7').style.transform = 'translateY(calc(-200% - 40px))'
+					document.querySelector('.review_8').style.transform = 'translateY(calc(-200% - 40px))'
+					document.querySelector('.review_9').style.transform = 'translateY(calc(-200% - 40px))'
+
+					document.getElementById('reviews__label-1').style.backgroundColor = '#bdbdbd'
+					document.getElementById('reviews__label-2').style.backgroundColor = '#bdbdbd'
+					document.getElementById('reviews__label-3').style.backgroundColor = '#ffbe41'
+				}
+		    }
+		}
+
+		handleResize();
+	</script>
+	<script src="/js/burger.js"></script>
+	<script src="/js/toggle-mode.js"></script>
+	<script>
+		const body = document.querySelector('#body')
+		const enter__logo = document.querySelector('#enter__logo')
+		const enter__animation = document.querySelector('.enter__animation')
+
+		if (sessionStorage.getItem('welcomeShown')) {
+            enter__animation.style.display = 'none';
+            body.style.overflowY = 'visible';
+        } else {
+        	sessionStorage.setItem('welcomeShown', 'true');
+
+	        body.style.overflowY = 'hidden';
+			setTimeout(() => {
+				enter__logo.style.opacity = '1';
+			}, 300);
+			setTimeout(() => {
+				enter__animation.style.opacity = '0';
+				setTimeout(() => {
+					enter__animation.style.display = 'none';
+					body.style.overflowY = 'visible';
+				}, 1000)
+			}, 2500);
+        }
+	</script>
+	<script>
+		let categoryLeft = document.getElementById('categoryLeft')
+		let categoryRight = document.getElementById('categoryRight')
+		
+		let cF1 = document.querySelector('.cF1')
+		let cF2 = document.querySelector('.cF2')
+		let cF3 = document.querySelector('.cF3')
+		let cF4 = document.querySelector('.cF4')
+		let cF5 = document.querySelector('.cF5')
+		let cF6 = document.querySelector('.cF6')
+		let cF7 = document.querySelector('.cF7')
+		let cF8 = document.querySelector('.cF8')
+		let cF9 = document.querySelector('.cF9')
+		
+		
+		
+		function handleResize() {
+		    if (window.matchMedia('(max-width: 1023px)').matches) {
+				cF1.style.marginLeft = '0'
+				cF2.style.marginLeft = '0'
+				cF3.style.marginLeft = '0'
+				cF4.style.marginLeft = '0'
+				cF5.style.marginLeft = '0'
+				cF6.style.marginLeft = '0'
+				cF7.style.marginLeft = '0'
+				cF8.style.marginLeft = '0'
+				cF9.style.marginLeft = '0'
+				
+				let currentScroll = 1
+				cF1.style.display = ''
+				cF2.style.display = ''
+				cF3.style.display = ''
+				cF4.style.display = 'none'
+				cF5.style.display = 'none'
+				cF6.style.display = 'none'
+				cF7.style.display = 'none'
+				cF8.style.display = 'none'
+				cF9.style.display = 'none'
+
+		    	categoryLeft.addEventListener('click', function() {
+		    		if (currentScroll === 1) {
+					}else if (currentScroll === 2){
+						cF1.style.display = ''
+						cF2.style.display = ''
+						cF3.style.display = ''
+						cF4.style.display = 'none'
+						cF5.style.display = 'none'
+						cF6.style.display = 'none'
+						cF7.style.display = 'none'
+						cF8.style.display = 'none'
+						cF9.style.display = 'none'
+
+						currentScroll = 1
+					}else if (currentScroll === 3){
+						cF1.style.display = 'none'
+						cF2.style.display = 'none'
+						cF3.style.display = 'none'
+						cF4.style.display = ''
+						cF5.style.display = ''
+						cF6.style.display = ''
+						cF7.style.display = 'none'
+						cF8.style.display = 'none'
+						cF9.style.display = 'none'
+						currentScroll = 2
+					}
+		    	});
+
+				categoryRight.addEventListener('click', function() {
+		    		if (currentScroll === 1) {
+		    			cF1.style.display = 'none'
+						cF2.style.display = 'none'
+						cF3.style.display = 'none'
+						cF4.style.display = ''
+						cF5.style.display = ''
+						cF6.style.display = ''
+						cF7.style.display = 'none'
+						cF8.style.display = 'none'
+						cF9.style.display = 'none'
+						currentScroll = 2
+					}else if (currentScroll === 2){
+						cF1.style.display = 'none'
+						cF2.style.display = 'none'
+						cF3.style.display = 'none'
+						cF4.style.display = 'none'
+						cF5.style.display = 'none'
+						cF6.style.display = 'none'
+						cF7.style.display = ''
+						cF8.style.display = ''
+						cF9.style.display = ''
+						currentScroll = 3
+					}else if (currentScroll === 3){
+					}
+		    	});
+
+		    } else {
+				cF1.style.marginLeft = '0px'
+				categoryLeft.addEventListener('click', function() {
+		    		if (cF1.style.marginLeft === 'calc(-195% + 83px)') {
+						cF1.style.marginLeft = 'calc(-95% - 17px)'
+					}else if (cF1.style.marginLeft === 'calc(-95% - 17px)'){
+						cF1.style.marginLeft = '0px'
+					}
+		    	});
+
+				categoryRight.addEventListener('click', function() {
+		    		if (cF1.style.marginLeft === '0px') {
+						cF1.style.marginLeft = 'calc(-95% - 17px)'
+					}else if (cF1.style.marginLeft === 'calc(-95% - 17px)'){
+						cF1.style.marginLeft = 'calc(-195% + 83px)'
+					}
+		    	});
+		    }
+		}
+
+		handleResize();
+	</script>
+</body>
+</html>

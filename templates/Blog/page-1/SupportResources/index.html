@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReIPopov | Блог</title>
+	<link rel="shortcut icon" href="/img/siteLogo.webp">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/burger.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+	<link rel="stylesheet" href="/css/adaptive.css">
+	<link rel="stylesheet" href="/css/toggle-mode.css">
+	<style>
+		.sub-block > .obj {
+			box-shadow: 0px 2px 4px rgb(5, 5, 5, 20%);
+			background-color: #fff;
+			padding: 10px;
+			display: flex;
+			flex-wrap: nowrap;
+			border-radius: 30px;
+			min-width: 350px;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 10px;
+		}
+
+		.block__interactive > a {
+			margin: 0 auto;
+		}
+		.block__interactive {
+			height: 100%;
+		}
+		
+		.custom-select-wrapper {
+		    position: relative;
+		    min-width: 350px;
+		    margin-bottom: 10px;
+		}
+
+		.custom-select {
+		    position: relative;
+		    display: flex;
+		    justify-content: space-between;
+		    background-color: white;
+		    border-radius: 30px;
+		    box-shadow: 0px 2px 4px rgb(5, 5, 5, 20%);
+		    cursor: pointer;
+		}
+
+		.select-trigger {
+		    font-size: 16px;
+		    width: 350px;
+		    padding: 10px;
+		}
+
+		.options {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    right: 0;
+		    background-color: white;
+		    border-radius: 30px;
+		    box-shadow: 0px 2px 4px rgb(5, 5, 5, 20%);
+		    display: none;
+		    flex-direction: column;
+		    overflow: hidden;
+		}
+
+		.options .custom-option {
+		    padding: 10px;
+		    cursor: pointer;
+		    transition: background 0.3s;
+		    border-bottom: 1px solid #c8c8c8;
+		}
+
+		.options .custom-option:hover {
+		    background-color: #ffbe4181;
+		}
+
+		.custom-select.open .options {
+		    display: flex;
+		}
+	</style>
+</head>
+<body id="body">
+	<header id="header">
+		<img src="/img/logo.webp" alt="" width="103px" height="24px">
+		<i class="fa-solid fa-sun" id="toggle-mode"></i>
+		<a href="../index.html" style="color: #fff; margin: 10px 0; font-size: 22px; font-weight: 700;" id="back">
+			<i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>Назад
+		</a>
+	</header>
+	<main id="main">
+		<div class="intro">
+			<img src="banner.webp" alt="" style="height: 100%; position: absolute; z-index: -1; width: 100%; object-fit: cover;">
+			<h1>Полезные Ресурсы</h1>
+			<span>Для Дизайнеров и Творческих Личностей</span>
+		</div>
+		<div class="container">
+			<section class="section__1 sub-block">
+				<div class="custom-select-wrapper" style="background: none;">
+				    <div class="custom-select">
+				        <div class="select-trigger">Все</div>
+				        <div class="options">
+						    <span class="custom-option" data-option='All'>Все</span>
+							<span class="custom-option" data-option='Option-1'>Подбор/Генерация RGB</span>
+							<span class="custom-option" data-option='Option-2'>Шрифты и Типографика</span>
+							<span class="custom-option" data-option='Option-3'>Стоковые изображения и иллюстрации</span>
+							<span class="custom-option" data-option='Option-4'>Инструменты для макетов и прототипирования</span>
+							<span class="custom-option" data-option='Option-5'>Иконки и SVG</span>
+							<span class="custom-option" data-option='Option-6'>Мокапы</span>
+							<span class="custom-option" data-option='Option-7'>Текстуры и фоны</span>
+							<span class="custom-option" data-option='Option-8'>Вдохновение и идеи для дизайна</span>
+							<span class="custom-option" data-option='Option-9'>Инструменты для работы с SVG-анимацией</span>
+							<span class="custom-option" data-option='Option-10'>Палитры и переходы градиентов</span>
+							<span class="custom-option" data-option='Option-11'>Генераторы текста и фраз</span>
+							<span class="custom-option" data-option='Option-12'>Векторные иконки и символы для интерфейсов</span>
+							<span class="custom-option" data-option='Option-13'>Модели и образцы для 3D-графики</span>
+							<span class="custom-option" data-option='Option-14'>Тренды и новинки в веб-дизайне</span>
+				        </div>
+				    </div>
+				</div>
+				<div class="obj All desc" style="display:;">
+					<h1 style="margin-bottom: 10px;">Полезные ресурсы</h1>
+					<span>Существует множество ресурсов и инструментов, которые могут существенно упростить процесс создания дизайна. Эти сайты предлагают стоковые изображения, векторные иконки, текстуры, инструменты для макетов и прототипов, а также идеи и вдохновение для вашего творчества. С их помощью вы сможете эффективно подбирать цвета, шрифты и создавать привлекательные визуальные решения, оставаясь в курсе современных трендов в дизайне.</span>
+				</div>
+
+				<div class="obj Option-1 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Подбор/Генерация RGB</h1>
+					<span>Процесс выбора или автоматического создания значений цвета в формате RGB (Red, Green, Blue) для получения нужного оттенка. Подбор RGB позволяет вручную определять точный цвет, в то время как генерация RGB автоматически создает цвета по заданным параметрам или случайным образом. Эти методы широко используются в графическом дизайне, веб-разработке и программировании для создания выразительных и точных цветовых решений.</span>
+				</div>
+
+				<div class="obj Option-2 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Шрифты и Типографика</h1>
+					<span>Искусство и наука оформления текста с использованием различных шрифтов для достижения эстетического и функционального баланса в дизайне. Типографика включает выбор, компоновку и применение шрифтов для создания визуально привлекательного и легко читаемого текста, который усиливает восприятие и передает нужное сообщение.</span>
+				</div>
+
+				<div class="obj Option-3 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Стоковые изображения и иллюстрации</h1>
+					<span>Готовые к использованию фотографии и иллюстрации, доступные для скачивания и использования в различных проектах. Они помогают визуально обогатить дизайн, создавая яркий и профессиональный вид без необходимости создания оригинальных изображений.</span>
+				</div>
+
+				<div class="obj Option-4 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Инструменты для макетов и прототипирования</h1>
+					<span>Программы и платформы, которые позволяют дизайнерам создавать интерактивные макеты и прототипы для визуализации структуры и функциональности веб-страниц или приложений. Эти инструменты помогают планировать пользовательский опыт до начала разработки.</span>
+				</div>
+
+				<div class="obj Option-5 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Иконки и SVG</h1>
+					<span>Графические элементы и файлы в формате SVG (Scalable Vector Graphics), используемые для создания значков, которые масштабируются без потери качества. Они играют важную роль в интерфейсах, помогая передавать информацию простым и понятным способом.</span>
+				</div>
+
+				<div class="obj Option-6 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Мокапы</h1>
+					<span>Реалистичные модели, которые демонстрируют, как дизайн будет выглядеть в реальной среде. Мокапы помогают представить финальный результат, показывая, как элементы будут смотреться на устройствах, печатной продукции или других носителях.</span>
+				</div>
+
+				<div class="obj Option-7 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Текстуры и фоны</h1>
+					<span>Изображения и узоры, используемые для создания заднего плана в дизайне, придающие ему глубину и визуальный интерес. Текстуры и фоны могут быть абстрактными или реалистичными, поддерживая общий стиль проекта.</span>
+				</div>
+
+				<div class="obj Option-8 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Вдохновение и идеи для дизайна</h1>
+					<span>Ресурсы, которые стимулируют творческий процесс, предоставляя примеры успешных проектов, новаторские решения и современные тенденции. Вдохновение помогает дизайнерам генерировать свежие идеи и находить новые пути выражения.</span>
+				</div>
+
+				<div class="obj Option-9 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Инструменты для работы с SVG-анимацией</h1>
+					<span>Программы и библиотеки, которые упрощают создание и управление анимацией в формате SVG. Эти инструменты позволяют добавлять интерактивные и динамические элементы в дизайн, оживляя интерфейсы и иллюстрации.</span>
+				</div>
+
+				<div class="obj Option-10 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Палитры и переходы градиентов</h1>
+					<span>Подборка гармоничных цветовых сочетаний и плавных переходов между цветами, которые используются для создания привлекательных и сбалансированных визуальных эффектов. Они помогают установить настроение и стиль в проекте.</span>
+				</div>
+
+				<div class="obj Option-11 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Генераторы текста и фраз</h1>
+					<span>Онлайн-инструменты, которые автоматически создают текстовые элементы, такие как случайные фразы, заголовки или заполнители текста. Они полезны для тестирования макетов и прототипов, а также для добавления интересного контента.</span>
+				</div>
+
+				<div class="obj Option-12 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Векторные иконки и символы для интерфейсов</h1>
+					<span>Коллекции значков и символов в векторном формате, используемые для оформления интерфейсов. Они помогают улучшить навигацию и коммуникацию в приложениях и на веб-сайтах за счет простоты и четкости.</span>
+				</div>
+
+				<div class="obj Option-13 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Модели и образцы для 3D-графики</h1>
+					<span>Готовые к использованию 3D-модели и шаблоны, которые ускоряют создание трехмерных проектов. Они позволяют дизайнерам использовать сложные формы и объекты без необходимости моделирования с нуля.</span>
+				</div>
+
+				<div class="obj Option-14 desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Тренды и новинки в веб-дизайне</h1>
+					<span>Обновления и современные направления в сфере веб-дизайна, которые помогают оставаться в курсе изменений и развиваться вместе с индустрией. Тренды дают понимание того, какие подходы и технологии популярны в данный момент.</span>
+				</div>
+
+				<div style="background: none;">
+					<a href=' https://coolors.co/' target="_blank" class="block__interactive Option-1">
+						<img src="coolors.png" alt="" style="border-radius: 30px;">
+						<h1>Coolors</h1>
+					</a>
+
+					<a href='https://color.adobe.com/' target="_blank" class="block__interactive Option-1">
+						<img src="AdobeColor.png" alt="" style="border-radius: 30px;">
+						<h1>Adobe Color</h1>
+					</a>
+
+					<a href='https://colorhunt.co/' target="_blank" class="block__interactive Option-1">
+						<img src="Paletton.png" alt="" style="border-radius: 30px;">
+						<h1>Paletton</h1>
+					</a>
+
+					<a href='https://paletton.com/' target="_blank" class="block__interactive Option-1">
+						<img src="Colorhunt.png" alt="" style="border-radius: 30px;">
+						<h1>Color Hunt</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://fonts.google.com/' target="_blank" class="block__interactive Option-2">
+						<img src="Googlefonts.jpg" alt="" style="border-radius: 30px;">
+						<h1>Googlefonts</h1>
+					</a>
+
+					<a href='https://vseshrifty.ru/category/design-fonts' target="_blank" class="block__interactive Option-2">
+						<img src="Vseshrifty.jpg" alt="" style="border-radius: 30px;">
+						<h1>Vseshrifty</h1>
+					</a>
+
+					<a href='https://thefonts.ru/dizajnerskie-shrifty/' target="_blank" class="block__interactive Option-2">
+						<img src="Thefonts.jpg" alt="" style="border-radius: 30px;">
+						<h1>Thefonts</h1>
+					</a>
+
+					<a href='https://www.fontsquirrel.com/' target="_blank" class="block__interactive Option-2">
+						<img src="FontSquirrel.jpg" alt="" style="border-radius: 30px;">
+						<h1>FontSquirrel</h1>
+					</a>
+
+					<a href='https://fonts-online.ru/categories/design-fonts' target="_blank" class="block__interactive Option-2">
+						<img src="fonts-onlin.jpg" alt="" style="border-radius: 30px;">
+						<h1>Fonts-onlin</h1>
+					</a>
+
+					<a href='https://www.dafont.com/' target="_blank" class="block__interactive Option-2">
+						<img src="DaFont.jpg" alt="" style="border-radius: 30px;">
+						<h1>DaFont</h1>
+					</a>
+
+					<a href='https://ffont.ru/fonts/category/dizaynerskie' target="_blank" class="block__interactive Option-2">
+						<img src="ffontru.jpg" alt="" style="border-radius: 30px;">
+						<h1>ffont.ru</h1>
+					</a>
+
+					<a href='https://elements.envato.com/ru/fonts/creative/pg-7' target="_blank" class="block__interactive Option-2">
+						<img src="elementsenvato.jpg" alt="" style="border-radius: 30px;">
+						<h1>Envato - шрифты</h1>
+					</a>
+
+					<a href='https://cyrillic-fonts.ru/category/шрифты/дизайнерские/' target="_blank" class="block__interactive Option-2">
+						<img src="cyrillic-fonts.jpg" alt="" style="border-radius: 30px;">
+						<h1>cyrillic-fonts</h1>
+					</a>
+
+					<a href='https://ofont.ru/category/31' target="_blank" class="block__interactive Option-2">
+						<img src="ofontru.jpg" alt="" style="border-radius: 30px;">
+						<h1>ofont.ru</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://unsplash.com/' target="_blank" class="block__interactive Option-3">
+						<img src="Unsplash.jpg" alt="" style="border-radius: 30px;">
+						<h1>Unsplash</h1>
+					</a>
+
+					<a href='https://www.pexels.com/' target="_blank" class="block__interactive Option-3">
+						<img src="Pexels.jpg" alt="" style="border-radius: 30px;">
+						<h1>Pexels</h1>
+					</a>
+
+					<a href='https://www.freepik.com/' target="_blank" class="block__interactive Option-3">
+						<img src="Freepik.jpg" alt="" style="border-radius: 30px;">
+						<h1>Freepik стоки</h1>
+					</a>
+
+					<a href='https://elements.envato.com/ru/fonts/creative/pg-7' target="_blank" class="block__interactive Option-3">
+						<img src="envato3.jpg" alt="" style="border-radius: 30px;">
+						<h1>Envato - стоковые</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://www.figma.com/' target="_blank" class="block__interactive Option-4">
+						<img src="Figma.jpg" alt="" style="border-radius: 30px;">
+						<h1>Figma</h1>
+					</a>
+
+					<a href='https://helpx.adobe.com/support/xd.html' target="_blank" class="block__interactive Option-4">
+						<img src="AdobeXD.jpg" alt="" style="border-radius: 30px;">
+						<h1>Adobe XD</h1>
+					</a>
+
+					<a href='https://www.sketch.com/' target="_blank" class="block__interactive Option-4">
+						<img src="Sketch.jpg" alt="" style="border-radius: 30px;">
+						<h1>Sketch</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://www.flaticon.com/' target="_blank" class="block__interactive Option-5">
+						<img src="Flaticon.jpg" alt="" style="border-radius: 30px;">
+						<h1>Flaticon</h1>
+					</a>
+
+					<a href='https://ru.freepik.com/vectors/иконки' target="_blank" class="block__interactive Option-5">
+						<img src="Freepik-ico.jpg" alt="" style="border-radius: 30px;">
+						<h1>Freepik - иконки</h1>
+					</a>
+
+					<a href='https://www.iconfinder.com/' target="_blank" class="block__interactive Option-5">
+						<img src="Iconfinder.jpg" alt="" style="border-radius: 30px;">
+						<h1>Iconfinder</h1>
+					</a>
+
+					<a href='https://fonts.google.com/icons' target="_blank" class="block__interactive Option-5">
+						<img src="MaterialIcons.jpg" alt="" style="border-radius: 30px;">
+						<h1>Material Icons</h1>
+					</a>
+
+					<a href='https://www.svgrepo.com/' target="_blank" class="block__interactive Option-5">
+						<img src="Svgrepo.jpg" alt="" style="border-radius: 30px;">
+						<h1>Svgrepo</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://smartmockups.com/' target="_blank" class="block__interactive Option-6">
+						<img src="Smartmockups.jpg" alt="" style="border-radius: 30px;">
+						<h1>Smartmockups</h1>
+					</a>
+					
+					<a href='https://resourceboy.com/mockups/' target="_blank" class="block__interactive Option-6">
+						<img src="Resourceboy.jpg" alt="" style="border-radius: 30px;">
+						<h1>Resourceboy</h1>
+					</a>
+					
+					<a href='https://goodmockups.com/' target="_blank" class="block__interactive Option-6">
+						<img src="Goodmockups.jpg" alt="" style="border-radius: 30px;">
+						<h1>Goodmockups</h1>
+					</a>
+					
+					<a href='https://ru.freepik.com/free-photos-vectors/mockup' target="_blank" class="block__interactive Option-6">
+						<img src="Freepik-mockup.jpg" alt="" style="border-radius: 30px;">
+						<h1>Freepik - мокапы</h1>
+					</a>
+					
+					<a href='https://psdmockup.ru/' target="_blank" class="block__interactive Option-6">
+						<img src="psdmockup.jpg" alt="" style="border-radius: 30px;">
+						<h1>Psdmockup</h1>
+					</a>
+					
+					<a href='https://mockuptree.com/' target="_blank" class="block__interactive Option-6">
+						<img src="mockuptree.jpg" alt="" style="border-radius: 30px;">
+						<h1>Mockuptree</h1>
+					</a>
+					
+					<a href='https://www.mockupworld.co/' target="_blank" class="block__interactive Option-6">
+						<img src="MockupWorld.jpg" alt="" style="border-radius: 30px;">
+						<h1>MockupWorld</h1>
+					</a>
+					
+					<a href='https://placeit.net/' target="_blank" class="block__interactive Option-6">
+						<img src="Placeit.jpg" alt="" style="border-radius: 30px;">
+						<h1>Placeit</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://www.toptal.com/designers/subtlepatterns/' target="_blank" class="block__interactive Option-7">
+						<img src="SubtlePatterns.jpg" alt="" style="border-radius: 30px;">
+						<h1>Subtle Patterns</h1>
+					</a>
+
+					<a href='https://www.textures.com/' target="_blank" class="block__interactive Option-7">
+						<img src="Texturescom.jpg" alt="" style="border-radius: 30px;">
+						<h1>Textures.com</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://www.behance.net/' target="_blank" class="block__interactive Option-8">
+						<img src="Behance.jpg" alt="" style="border-radius: 30px;">
+						<h1>Behance</h1>
+					</a>
+
+					<a href='https://dribbble.com/' target="_blank" class="block__interactive Option-8">
+						<img src="Dribbble.jpg" alt="" style="border-radius: 30px;">
+						<h1>Dribbble</h1>
+					</a>
+
+					<a href='https://www.awwwards.com/' target="_blank" class="block__interactive Option-8">
+						<img src="Awwwards.jpg" alt="" style="border-radius: 30px;">
+						<h1>Awwwards</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://lottiefiles.com/' target="_blank" class="block__interactive Option-9">
+						<img src="LottieFiles.jpg" alt="" style="border-radius: 30px;">
+						<h1>LottieFiles</h1>
+					</a>
+
+					<a href='https://svgomg.net/' target="_blank" class="block__interactive Option-9">
+						<img src="SVGOMG.jpg" alt="" style="border-radius: 30px;">
+						<h1>SVGOMG</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://www.grabient.com/' target="_blank" class="block__interactive Option-10">
+						<img src="Grabient.jpg" alt="" style="border-radius: 30px;">
+						<h1>Grabient</h1>
+					</a>
+					
+					<a href='https://uigradients.com/' target="_blank" class="block__interactive Option-10">
+						<img src="UIGradients.jpg" alt="" style="border-radius: 30px;">
+						<h1>UI Gradients</h1>
+					</a>
+
+					<a href='https://gradienthunt.com/' target="_blank" class="block__interactive Option-10">
+						<img src="GradientHunt.jpg" alt="" style="border-radius: 30px;">
+						<h1>Gradient Hunt</h1>
+					</a>
+					
+					<a href='https://mycolor.space/' target="_blank" class="block__interactive Option-10">
+						<img src="ColorSpace.jpg" alt="" style="border-radius: 30px;">
+						<h1>ColorSpace</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://lipsum.com/' target="_blank" class="block__interactive Option-11">
+						<img src="LoremIpsumGenerator.jpg" alt="" style="border-radius: 30px;">
+						<h1>Lorem Ipsum Generator</h1>
+					</a>
+					
+					<a href='https://hipsum.co/' target="_blank" class="block__interactive Option-11">
+						<img src="HipsterIpsum.jpg" alt="" style="border-radius: 30px;">
+						<h1>Hipster Ipsum</h1>
+					</a>
+
+					<a href='https://www.blindtextgenerator.com/lorem-ipsum' target="_blank" class="block__interactive Option-11">
+						<img src="BlindTextGenerator.jpg" alt="" style="border-radius: 30px;">
+						<h1>Blind Text Generator</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://thenounproject.com/' target="_blank" class="block__interactive Option-12">
+						<img src="NounProject.jpg" alt="" style="border-radius: 30px;">
+						<h1>Noun Project</h1>
+					</a>
+					
+					<a href='https://streamlinehq.com/' target="_blank" class="block__interactive Option-12">
+						<img src="StreamlineIcons.jpg" alt="" style="border-radius: 30px;">
+						<h1>Streamline Icons</h1>
+					</a>
+
+					<a href='https://heroicons.com/' target="_blank" class="block__interactive Option-12">
+						<img src="Heroicons.jpg" alt="" style="border-radius: 30px;">
+						<h1>Heroicons</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://sketchfab.com/' target="_blank" class="block__interactive Option-13">
+						<img src="Sketchfab.jpg" alt="" style="border-radius: 30px;">
+						<h1>Sketchfab</h1>
+					</a>
+					
+					<a href='https://www.turbosquid.com/' target="_blank" class="block__interactive Option-13">
+						<img src="Turbosquid.jpg" alt="" style="border-radius: 30px;">
+						<h1>Turbosquid</h1>
+					</a>
+
+					<!--  -->
+
+					<a href='https://css-tricks.com/' target="_blank" class="block__interactive Option-14">
+						<img src="CSSTricks.jpg" alt="" style="border-radius: 30px;">
+						<h1>CSS Tricks</h1>
+					</a>
+					
+					<a href='https://www.smashingmagazine.com/' target="_blank" class="block__interactive Option-14">
+						<img src="SmashingMagazine.jpg" alt="" style="border-radius: 30px;">
+						<h1>Smashing Magazine</h1>
+					</a>
+					
+					<a href='https://www.webdesignerdepot.com/' target="_blank" class="block__interactive Option-14">
+						<img src="WebDesignerDepot.jpg" alt="" style="border-radius: 30px;">
+						<h1>Web Designer Depot</h1>
+					</a>
+
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer id="footer">
+		<img src="/img/Pod.webp" alt="">
+		<div class="contacts">
+			<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+			<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+			<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+			<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+			<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+		</div>
+		<span style="color: #fff;">©2023 Portfolio - Все права защищены</span>
+	</footer>
+	<script src="/js/links.js"></script>
+	<script> //Сортировка на сайте
+		let currentOption = 'All'
+
+		document.querySelector('.select-trigger').addEventListener('click', function() {
+		    this.parentNode.classList.toggle('open');
+		});
+
+		for (const option of document.querySelectorAll(".custom-option")) {
+		    option.addEventListener('click', function() {
+		        this.closest('.custom-select').querySelector('.select-trigger').textContent = this.textContent;
+		        this.closest('.custom-select').classList.remove('open');
+		        
+		        if(currentOption !== option.getAttribute('data-option')){
+		        	document.querySelectorAll('.' + currentOption).forEach((item) => {
+		        		item.style.display = 'none'
+		        	})
+
+		        	if(option.getAttribute('data-option') === 'All'){
+						document.querySelectorAll('.Option-1').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-2').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-3').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-4').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-5').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-6').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-7').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-8').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-9').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-10').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-11').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-12').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-13').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Option-14').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+
+			        	document.querySelector('.Option-1.desc').style.display = 'none'
+			        	document.querySelector('.Option-2.desc').style.display = 'none'
+			        	document.querySelector('.Option-3.desc').style.display = 'none'
+			        	document.querySelector('.Option-4.desc').style.display = 'none'
+			        	document.querySelector('.Option-5.desc').style.display = 'none'
+			        	document.querySelector('.Option-6.desc').style.display = 'none'
+			        	document.querySelector('.Option-7.desc').style.display = 'none'
+			        	document.querySelector('.Option-8.desc').style.display = 'none'
+			        	document.querySelector('.Option-9.desc').style.display = 'none'
+			        	document.querySelector('.Option-10.desc').style.display = 'none'
+			        	document.querySelector('.Option-11.desc').style.display = 'none'
+			        	document.querySelector('.Option-12.desc').style.display = 'none'
+			        	document.querySelector('.Option-13.desc').style.display = 'none'
+			        	document.querySelector('.Option-14.desc').style.display = 'none'
+		        	}else{
+		        		document.querySelectorAll('.Option-1').forEach((item) => {
+		        			item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-2').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-3').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-4').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-5').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-6').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-7').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-8').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-9').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-10').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-11').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-12').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-13').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Option-14').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+		        	}
+
+		        	currentOption = option.getAttribute('data-option')
+
+		        	document.querySelectorAll('.' + option.getAttribute('data-option')).forEach((item) => {
+		        		item.style.display = ''
+		        	})
+		        }
+		    });
+		}
+
+
+	</script>
+	
+	<script src="/js/burger.js"></script>
+	<script src="/js/toggle-mode.js"></script>
+	<script src="/js/header.js"></script>
+</body>
+</html>

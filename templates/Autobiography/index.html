@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReIPopov | Арты</title>
+	<link rel="shortcut icon" href="/img/siteLogo.webp">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/burger.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="/css/fullScreen.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+	<link rel="stylesheet" href="/css/adaptive.css">
+	<link rel="stylesheet" href="/css/toggle-mode.css">
+
+	<style>
+		.timeline {
+			margin-top: 60px;
+			width: 100%;
+			height: 4px;
+			background-color: #bdbdbd;
+			display: flex;
+			position: relative;
+		}
+		.timeline > label {
+			width: 20px;
+			height: 20px;
+			background-color: #bdbdbd;
+			border-radius: 50%;
+			position: absolute;
+			top: -8px;
+			display: flex;
+			cursor: pointer;
+			transition: .3s;
+		}
+		.timeline_block {
+			max-width: 350px;
+			height: 250px;
+			width: 100%;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 30px;
+			transition: .3s;
+			margin-top: 30px;
+			position: relative;
+		}
+
+		.biographies {
+			width: 100%;
+			background-color: #fff;
+			margin-top: 50px;
+			padding: 10px;
+			display: flex;
+			border-radius: 30px;
+			display: flex;
+		}
+
+		.biographies > img {
+			width: 285px;
+			height: 285px;
+			margin-right: 10px;
+			border-radius: 30px;
+		}
+
+	</style>
+</head>
+<body id="body">
+	<header id="header">
+		<img src="/img/logo.webp" alt="" width="103px" height="24px">
+		<div class="navbar">
+			<ul>
+				<li><a href="/index.html">Главная</a></li>
+				<li><a href="/templates/Art/page-1/index.html">Арты</a></li>
+				<li><a href="/templates/Drawings/page-1/index.html">Рисунки</a></li>
+				<li><a href="/templates/3D/page-1/index.html">3D Работы</a></li>
+				<li><a href="/templates/Design/page-1/index.html">Дизайн</a></li>
+				<li><a href="/templates/Lettering/page-1/index.html">Леттеринг</a></li>
+				<li><a href="/templates/Logo/page-1/index.html">Логотипы</a></li>
+				<li><a href="/templates/UX/page-1/index.html">Макеты сайтов</a></li>
+				<li><a href="/templates/BookDesign/page-1/index.html">Дизайн книги</a></li>
+				<li><a href="/templates/Autobiography/index.html" style="color: #fff; border-bottom: 2px solid #ffbe41; opacity: 1;">Автобиография</a></li>
+				<li><a href="/templates/Blog/page-1/index.html">Блог</a></li>
+				<li><a href="/templates/CONTACTS.html">Контакты</a></li>
+			</ul>
+		</div>
+		<i class="fa-solid fa-sun" id="toggle-mode"></i>
+		<div id="nav-icon6">
+		    <span></span>
+		</div>
+	</header>
+
+	<div id="burger">
+		<div>
+			<a href="/index.html"><span>•</span> Главная</a>
+			<h2 id="burger__portfolio-btn">Мое портолио <i class="fa-solid fa-caret-down" style="transition: .3s;"></i></h2>
+			<div id="burger__portfolio" style="height: 0%; display: none;">
+				<a id="bpi__1" href="/templates/Art/page-1/index.html"><span>•</span> Арты</a>
+				<a id="bpi__2" href="/templates/Drawings/page-1/index.html"><span>•</span> Рисунки</a>
+				<a id="bpi__3" href="/templates/3D/page-1/index.html"><span>•</span> 3D Работы</a>
+				<a id="bpi__4" href="/templates/Design/page-1/index.html"><span>•</span> Дизайн</a>
+				<a id="bpi__5" href="/templates/Lettering/page-1/index.html"><span>•</span> Леттеринг</a>
+				<a id="bpi__6" href="/templates/Logo/page-1/index.html"><span>•</span> Логотипы</a>
+				<a id="bpi__7" href="/templates/UX/page-1/index.html"><span>•</span> Макеты сайтов</a>
+				<a id="bpi__8" href="/templates/BookDesign/page-1/index.html"><span>•</span> Дизайн книги</a>
+			</div>
+
+			<a href="/templates/Autobiography/index.html"><span style="color: #ffbe41;">•</span> Автобиография</a>
+			<a href="/templates/Blog/page-1/index.html"><span>•</span> Блог</a>
+			<a href="/templates/CONTACTS.html"><span>•</span> Контакты</a>
+			
+		</div>
+		<footer id="footer">
+			<div class="contacts">
+				<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+				<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+				<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+				<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+				<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+			</div>
+		</footer>
+	</div>
+	
+	<main id="main">
+		<div class="intro">
+			<img src="intro/1.jpg" alt="" style="height: 100%; position: absolute; z-index: -1; width: 100%; object-fit: cover;">
+			<h1>AUTOBIOGRAPHY</h1>
+			<span>---</span>
+		</div>
+		<div class="container autobiography">
+			<section class="section__1">
+				<div style="width: calc(100% + 10px); height: auto; position: relative;">
+					<div class="timeline">
+						<label for="y2021" id="l2021" style="left: calc(0% + 10px); background-color: #ffbe41;">
+							<p style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%);">2021</p>
+						</label>
+						<label for="y2022" id="l2022" style="left: calc(25%);">
+							<p style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%);">2022</p>
+						</label>
+						<label for="y2023" id="l2023" style="left: calc(50% - 10px);">
+							<p style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%);">2023</p>
+						</label>
+						<label for="y2024" id="l2024" style="left: calc(75% - 15px);">
+							<p style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%);">2024</p>
+						</label>
+						<label for="y2025" id="l2025" style="left: calc(100% - 30px);">
+							<p style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%);">2025</p>
+						</label>
+
+					</div>
+
+					<div class="timeline_block content__block" style="transform: translateX(0%); left: 0%;">
+						<h1 style="color: #ffbe41; font-size: 30px; margin-bottom: 10px;">
+							2021 г.
+						</h1>
+						<p>
+							Знакомство с Photoshop: начало освоения графического дизайна. Первые заказы на фрилансе: начало практического применения навыков. Поступление в Политехнический университет по специальности «Информационные системы и технологии» в сфере бизнеса.
+						</p>
+					</div>
+
+					<h1 style="width: 100%; text-align: center; margin-top: 50px;">АВТОБИОГРАФИЯ</h1>
+
+					<div class="biographies content__block">
+						<img src="avatar.webp" alt="">
+						<p>
+							<strong>Меня зовут Андрей, мне 23 года, и с 21 года я погрузился в мир графического дизайна.</strong>
+							<br>
+							<br>
+							2021 год стал для меня началом пути. Осваивая Adobe Photoshop, я начал свои первые шаги в графическом дизайне, одновременно получая заказы на фрилансе. Это был период активного самообучения, где я учился применять теорию на практике. В том же году я поступил в Политехнический университет на специальность «Информационные системы и технологии в сфере бизнеса», что позволило мне сочетать технические знания с креативной работой.
+							<br>
+							<br>
+							В 2022 году я устроился инженером в Национальную библиотеку имени Осмонова. Работа в государственной структуре дала мне уникальный опыт, а выполнение проектов по графическому дизайну для библиотеки позволило мне совмещать свои технические навыки с креативным мышлением.
+							<br>
+							<br>
+							2023 год стал для меня важным этапом: я завершил обучение в университете и получил диплом. В этом же году я начал работать в ОАО «Кыргызтелеком» графическим дизайнером в отделе маркетинга. Эта работа позволила мне применять и развивать свои навыки в крупной компании, работая над рекламными материалами, брендированием и продвижением компании.
+							<br>
+							<br>
+							В 2024 году я прошел квалификацию в школе OnyClick, что позволило мне углубить профессиональные знания. Получение сертификата государственного уровня подтвердило мою квалификацию и профессионализм в области графического дизайна.
+							<br>
+							<br>
+							Мой путь в графическом дизайне — это постоянное развитие и поиск новых возможностей для роста и самовыражения через творчество.
+						</p>
+					</div>
+
+					<h1 style="width: 100%; text-align: center; margin-top: 50px; margin-bottom: 40px;">ДИПЛОМ - СЕРТИФИКАТЫ - БЛАГ.ПИСЬМА</h1>
+
+					<div class="block__interactive item">
+						<img src="diplom.webp" alt="">
+						<h1>Диплом от Кыргызский Гос. Тех. Университета</h1>
+					</div>
+					<div class="block__interactive item">
+						<img src="Certif-biblioteka.webp" alt="">
+						<h1>Сертификат от Нац. библиотеки им. Осмонова</h1>
+					</div>
+					<div class="block__interactive item">
+						<img src="Blag-pismo-Kyrgyztelecom.webp" alt="">
+						<h1>Благодарственное письмо от Кыргызтелеком</h1>
+					</div>
+					<div class="block__interactive item">
+						<img src="Certif-OneClick.webp" alt="">
+						<h1>Сертификат от One Click</h1>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="fullScreen" style="display: none;">
+			<i class="fa-solid fa-xmark" id="fullScreenBtn__close"></i>
+
+			<div class="fullScreen__window">
+				<img src="" alt="" id="fullScreen__image" style="object-fit: cover;">
+			</div>
+
+			<div class="fullScreen__bottom">
+				<div class="list_controle" style="width: 50px;">
+					<button id="zoom_btn" onclick="zoomBlock()"><i class="fa-solid fa-magnifying-glass"></i></button>
+					<div id="zoom_block" style="display: none; width: 145px; right: -130px;">
+						<input type="range" min="0" max="9" id="size" oninput="sizePic()" value="0"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<img src="/img/Pod.webp" alt="">
+		<div class="contacts">
+			<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+			<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+			<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+			<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+			<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+		</div>
+		<span style="color: #fff;">©2023 Portfolio - Все права защищены</span>
+	</footer>
+	<script src="/js/links.js"></script>
+	<script>
+		function handleResize() {
+		    if (window.matchMedia('(max-width: 1023px)').matches) {
+		    	for(let i = 1; i <= 5; i++){
+					document.getElementById('l202' + i).addEventListener('click', function() {
+						document.querySelectorAll('label').forEach(element => {
+							element.style.backgroundColor = '#bdbdbd';
+						});
+						document.getElementById('l202' + i).style.backgroundColor = '#ffbe41';
+						if (i === 1) {
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2021 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Знакомство с Photoshop: начало освоения графического дизайна. Первые заказы на фрилансе: начало практического применения навыков. Поступление в Политехнический университет по специальности «Информационные системы и технологии» в сфере бизнеса.'
+							// document.querySelector('.timeline_block').style.left = '0%'
+						}else if (i === 2){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2022 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Трудоустройство в Национальную библиотеку им. Осмонова на должности инженера: получение опыта работы в государственной структуре. Выполнение проектов по графическому дизайну для библиотеки: сочетание технических знаний с креативной деятельностью.'
+						}else if (i === 3){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2023 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Завершение обучения в университете: получение диплома. Трудоустройство в ОАО «Кыргызтелеком»: работа графическим дизайнером в отделе маркетинга, применение полученных знаний и навыков в крупной компании.'
+						}else if (i === 4){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2024 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Прошел квалификацию на курсах школы OnyClick: углубление профессиональных знаний. Получение сертификата государственного уровня: подтверждение квалификации и профессионализма в области графического дизайна.'
+						}else if (i === 5){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2025 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'ПУСТО'
+						}
+					});
+				}
+		    }else{
+				for(let i = 1; i <= 5; i++){
+					document.getElementById('l202' + i).addEventListener('click', function() {
+						document.querySelectorAll('label').forEach(element => {
+							element.style.backgroundColor = '#bdbdbd';
+						});
+						document.getElementById('l202' + i).style.backgroundColor = '#ffbe41';
+						if (i === 1) {
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2021 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Знакомство с Photoshop: начало освоения графического дизайна. Первые заказы на фрилансе: начало практического применения навыков. Поступление в Политехнический университет по специальности «Информационные системы и технологии» в сфере бизнеса.'
+							document.querySelector('.timeline_block').style.left = '0%'
+							document.querySelector('.timeline_block').style.transform = 'translateX(0%)'
+						}else if (i === 2){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2022 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Трудоустройство в Национальную библиотеку им. Осмонова на должности инженера: получение опыта работы в государственной структуре. Выполнение проектов по графическому дизайну для библиотеки: сочетание технических знаний с креативной деятельностью.'
+							document.querySelector('.timeline_block').style.left = '25%'
+							document.querySelector('.timeline_block').style.transform = 'translateX(0%)'
+						}else if (i === 3){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2023 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Завершение обучения в университете: получение диплома. Трудоустройство в ОАО «Кыргызтелеком»: работа графическим дизайнером в отделе маркетинга, применение полученных знаний и навыков в крупной компании.'
+							document.querySelector('.timeline_block').style.left = '50%'
+							document.querySelector('.timeline_block').style.transform = 'translateX(-50%)'
+						}else if (i === 4){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2024 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'Прошел квалификацию на курсах школы OnyClick: углубление профессиональных знаний. Получение сертификата государственного уровня: подтверждение квалификации и профессионализма в области графического дизайна.'
+							document.querySelector('.timeline_block').style.left = '75%'
+							document.querySelector('.timeline_block').style.transform = 'translateX(-100%)'
+						}else if (i === 5){
+							document.querySelector('.timeline_block').querySelector('h1').innerText = '2025 г.'
+							document.querySelector('.timeline_block').querySelector('p').innerText = 'ПУСТО'
+							document.querySelector('.timeline_block').style.left = '100%'
+							document.querySelector('.timeline_block').style.transform = 'translateX(-100%)'
+						}
+					});
+				}
+		    }
+		}
+		handleResize();
+	</script>
+
+	<script>
+		const toggle_mode = document.getElementById('toggle-mode')
+
+		let darkMode = localStorage.getItem('darkMode') === 'true';
+
+		function applyDarkMode() {
+		    toggle_mode.classList.remove('fa-sun');
+		    toggle_mode.classList.add('fa-moon');
+
+		    document.querySelector('.container').classList.add('darkMode');
+		    document.querySelector('body').classList.add('darkMode');
+
+		    document.querySelectorAll('.block__interactive').forEach(element => {
+		        element.classList.add('darkMode');
+		    });
+		    document.querySelectorAll('.content__block').forEach((element) => {
+		    	element.classList.add('darkMode');
+		    });
+		};
+
+		function removeDarkMode() {
+		    toggle_mode.classList.add('fa-sun');
+		    toggle_mode.classList.remove('fa-moon');
+
+		    document.querySelector('.container').classList.remove('darkMode');
+		    document.querySelector('body').classList.remove('darkMode');
+
+		    document.querySelectorAll('.block__interactive').forEach(element => {
+		        element.classList.remove('darkMode');
+		    });
+		    document.querySelector('.content__block').classList.remove('darkMode');
+		}
+
+		if (darkMode) {
+		    applyDarkMode();
+		} else {
+		    removeDarkMode();
+		}
+
+		toggle_mode.onclick = function() {
+		    darkMode = !darkMode;
+		    localStorage.setItem('darkMode', darkMode);
+
+		    if (darkMode) {
+		        applyDarkMode();
+		    } else {
+		        removeDarkMode();
+		    }
+		}
+	</script>
+	<script>
+		const header = document.getElementById('header');
+		const body = document.getElementById('body');
+		const fullScreen = document.querySelector('.fullScreen');
+		const fullScreenImage = document.getElementById('fullScreen__image');
+		const fullScreenBtnZoom = document.getElementById('fullScreenBtn__zoom');
+		const fullScreenBtnClose = document.getElementById('fullScreenBtn__close');
+		const fullScreen__bottom = document.querySelector('.fullScreen__bottom');
+
+		const fullScreenWindow = document.querySelector('.fullScreen__window');
+		let zoom_block = document.getElementById('zoom_block');
+
+		let currentImageIndex;
+
+		document.querySelectorAll('.item').forEach((item, index) => {
+			item.addEventListener('click', () => {
+				currentImageIndex = index + 1;
+				header.style.display = 'none';
+				body.style.overflow = 'hidden';
+				fullScreen.style.display = '';
+				fullScreenImage.src = item.querySelector('img').src;
+				document.documentElement.requestFullscreen();
+
+				fullScreenImage.style.width = 'auto';
+				fullScreenImage.style.height = 'auto';
+				fullScreenImage.style.maxWidth = '100%';
+				fullScreenImage.style.maxHeight = '100%';
+			});
+		});
+
+		fullScreenBtnClose.addEventListener('click', function() {
+			fullScreenClose()
+		})
+
+		function fullScreenClose(){
+			header.style.display = '';
+			body.style.overflow = 'visible';
+			fullScreen.style.display = 'none';
+			document.exitFullscreen();
+
+			zoomBlockVisible = false;
+
+			document.getElementById('zoom_block').style.display = 'none';
+			fullScreenImage.removeEventListener('mousedown', startDragging);
+			document.removeEventListener('mousemove', dragElement);
+			document.removeEventListener('mouseup', stopDragging);
+
+			fullScreenImage.style.top = '';
+			fullScreenImage.style.left = '';
+			document.getElementById("size").value = '0'
+
+			fullScreenImage.style.cursor = 'default';
+
+			fullScreenImage.style.width = 'auto';
+			fullScreenImage.style.height = 'auto';
+			fullScreenImage.style.maxWidth = '100%';
+			fullScreenImage.style.maxHeight = '100%';
+		}
+		document.addEventListener('keydown', function(e) {
+			if (e.key === "Escape"){
+				fullScreenClose()
+			}
+		});
+
+		let zoomBlockVisible = false;
+
+		function zoomBlock() {
+		    if (zoomBlockVisible === false) {
+		        document.getElementById('zoom_block').style.display = '';
+		        zoomBlockVisible = true;
+
+		        fullScreenImage.addEventListener('mousedown', startDragging);
+		        document.addEventListener('mousemove', dragElement);
+		        document.addEventListener('mouseup', stopDragging);
+
+		        fullScreenImage.style.cursor = 'grab';
+		        fullScreenImage.style.width = '100%';
+		        fullScreenImage.style.height = '';
+		        fullScreenImage.style.maxWidth = '';
+		        fullScreenImage.style.maxHeight = '';
+		    } else {
+		        zoomBlockVisible = false;
+
+		        document.getElementById('zoom_block').style.display = 'none';
+		        fullScreenImage.removeEventListener('mousedown', startDragging);
+		        document.removeEventListener('mousemove', dragElement);
+		        document.removeEventListener('mouseup', stopDragging);
+
+		        fullScreenImage.style.top = '';
+		        fullScreenImage.style.left = '';
+		        document.getElementById("size").value = '0'
+
+		        fullScreenImage.style.cursor = 'default';
+
+		        fullScreenImage.style.width = 'auto';
+		        fullScreenImage.style.height = 'auto';
+		        fullScreenImage.style.maxWidth = '100%';
+		        fullScreenImage.style.maxHeight = '100%';
+		    }
+		}
+
+		let isDragging = false;
+		let offsetX, offsetY;
+
+		function startDragging(e) {
+		    isDragging = true;
+		    offsetX = e.clientX - fullScreenImage.getBoundingClientRect().left;
+		    offsetY = e.clientY - fullScreenImage.getBoundingClientRect().top;
+		    fullScreenImage.style.cursor = 'grabbing';
+		    e.preventDefault();
+		}
+
+		function dragElement(e) {
+		    if (isDragging) {
+		        fullScreenImage.style.left = `${e.clientX - offsetX}px`;
+		        fullScreenImage.style.top = `${e.clientY - offsetY}px`;
+		        e.preventDefault()
+		    }
+		}
+
+		function stopDragging() {
+		    isDragging = false;
+		    fullScreenImage.style.cursor = 'grab';
+		}
+
+
+		function sizePic() {
+			size = document.getElementById("size").value;
+			fullScreenImage.style.width = 100 + 10*size + '%';
+		}
+	</script>
+	<script src="/js/header.js"></script>
+	<script src="/js/burger.js"></script>
+</body>
+</html>

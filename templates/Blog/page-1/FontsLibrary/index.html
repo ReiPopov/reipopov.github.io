@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReIPopov | Блог</title>
+	<link rel="shortcut icon" href="/img/siteLogo.webp">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/burger.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+	<link rel="stylesheet" href="/css/adaptive.css">
+	<link rel="stylesheet" href="/css/toggle-mode.css">
+	<style>
+		.sub-block > .obj {
+			box-shadow: 0px 2px 4px rgb(5, 5, 5, 20%);
+			background-color: #fff;
+			padding: 10px;
+			display: flex;
+			flex-wrap: nowrap;
+			border-radius: 30px;
+			min-width: 350px;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 10px;
+		}
+
+		.block__interactive > a {
+			margin: 0 auto;
+		}
+		.block__interactive {
+			height: 100%;
+		}
+		
+		.custom-select-wrapper {
+		    position: relative;
+		    min-width: 350px;
+		    margin-bottom: 10px;
+		}
+
+		.custom-select {
+		    position: relative;
+		    display: flex;
+		    justify-content: space-between;
+		    background-color: white;
+		    border-radius: 30px;
+		    box-shadow: 0px 2px 4px rgb(5, 5, 5, 20%);
+/*		    padding: 10px;*/
+		    cursor: pointer;
+		}
+
+		.select-trigger {
+		    font-size: 16px;
+		    width: 350px;
+		    padding: 10px;
+		}
+
+		.options {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    right: 0;
+		    background-color: white;
+		    border-radius: 30px;
+		    box-shadow: 0px 2px 4px rgb(5, 5, 5, 20%);
+		    display: none;
+		    flex-direction: column;
+		    overflow: hidden;
+		}
+
+		.options .custom-option {
+		    padding: 10px;
+		    cursor: pointer;
+		    transition: background 0.3s;
+		    border-bottom: 1px solid #c8c8c8;
+		}
+
+		.options .custom-option:hover {
+		    background-color: #ffbe4181;
+		}
+
+		.custom-select.open .options {
+		    display: flex;
+		}
+	</style>
+</head>
+<body id="body">
+	<header id="header">
+		<img src="/img/logo.webp" alt="" width="103px" height="24px">
+		<i class="fa-solid fa-sun" id="toggle-mode"></i>
+		<a href="../index.html" style="color: #fff; margin: 10px 0; font-size: 22px; font-weight: 700;" id="back">
+			<i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>Назад
+		</a>
+	</header>
+	<main id="main">
+		<div class="intro">
+			<img src="banner.webp" alt="" style="height: 100%; position: absolute; z-index: -1; width: 100%; object-fit: cover;">
+			<h1>Библиотека шрифтов</h1>
+			<span>Сборник различных шрифтов</span>
+		</div>
+		<div class="container">
+			<section class="section__1 sub-block">
+				<div class="custom-select-wrapper" style="background: none;">
+				    <div class="custom-select">
+				        <div class="select-trigger">Все</div>
+				        <div class="options">
+						    <span class="custom-option" data-option='All'>Все</span>
+							<span class="custom-option" data-option='Antiqua'>Антиква</span>
+							<span class="custom-option" data-option='Gothic'>Готический</span>
+							<span class="custom-option" data-option='Grotesque'>Гротестк</span>
+							<span class="custom-option" data-option='Handwritten'>Рукописный</span>
+							<span class="custom-option" data-option='Creative'>Креативный</span>
+				        </div>
+				    </div>
+				</div>
+				<div class="obj All desc" style="display:;">
+					<h1 style="margin-bottom: 10px;">Библиотека шрифтов</h1>
+					<span>Привет! Я собрал библиотеку шрифтов, которые, на мой взгляд, очень полезны для цифрового дизайна. Думаю, они могут быть интересны и вам.</span>
+					<br>
+					<span>Вы можете скачать все шрифты из библиотеки, всего лишь нажав на кнопку ниже. Для каждого стиля шрифтов из списка сверху есть отдельные ссылки.</span>
+					<a href="/fonts/pack/Fonts-All.zip" download style="margin-top: 10px; border-radius: 30px; min-width: 270px;" class="button">Скачать все шрифты</a>
+				</div>
+
+				<div class="obj Antiqua desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Антиква</h1>
+					<span>Антиква — это стиль шрифта с четкими линиями и выразительными засечками, который часто используется в печатной продукции. Он обеспечивает высокую читаемость и придает тексту элегантность. Антиква подходит для заголовков и основного текста, сочетая формальность и доступность. Этот стиль идеально подходит для книг, журналов и других материалов, где важна эстетика.</span>
+					<br>
+					<span>Вы можете скачать все шрифты стиля Антиква, всего лишь нажав на кнопку ниже. Для каждого стиля шрифтов из списка сверху есть отдельные ссылки.</span>
+					<a href="/fonts/pack/Fonts-Antiqua.zip" download style="margin-top: 10px; border-radius: 30px; min-width: 270px;" class="button">Скачать шрифты Антиква</a>
+				</div>
+
+				<div class="obj Gothic desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Готический шрифт</h1>
+					<span>Готический шрифт — это стиль, характеризующийся резкими, угловатыми формами и отсутствием засечек. Он часто ассоциируется с историческими текстами и архитектурой Средневековья. Готические шрифты могут придавать дизайну драматичность и атмосферу старины, поэтому они часто используются в проектах, связанных с темами мистики, романтики и средневековой культуры.</span>
+					<br>
+					<span>Вы можете скачать все шрифты стиля Готический, всего лишь нажав на кнопку ниже. Для каждого стиля шрифтов из списка сверху есть отдельные ссылки.</span>
+					<a href="/fonts/pack/Fonts-Gothic.zip" download style="margin-top: 10px; border-radius: 30px; min-width: 270px;" class="button">Скачать шрифты Готика</a>
+				</div>
+
+				<div class="obj Grotesque desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Гротеск</h1>
+					<span>Гротеск — это стиль шрифта, который отличается простыми, геометрическими формами и минималистичным дизайном. Он обычно не имеет засечек и обладает равномерной толщиной линий, что придает ему современный и лаконичный вид. Гротескные шрифты широко используются в рекламе, логотипах и веб-дизайне благодаря своей универсальности и хорошей читаемости.</span>
+					<br>
+					<span>Вы можете скачать все шрифты стиля Гротеск, всего лишь нажав на кнопку ниже. Для каждого стиля шрифтов из списка сверху есть отдельные ссылки.</span>
+					<a href="/fonts/pack/Fonts-Grotesque.zip" download style="margin-top: 10px; border-radius: 30px; min-width: 270px;" class="button">Скачать шрифты Гротеск</a>
+				</div>
+
+				<div class="obj Handwritten desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Рукописный шрифт</h1>
+					<span>Рукописный шрифт — это стиль, имитирующий естественное написание от руки. Он может варьироваться от элегантных и изящных форм до более неформальных и игривых. Такие шрифты часто используются для создания дружелюбной и личной атмосферы в дизайне, а также в проектах, связанных с искусством, приглашениями и брендингом.</span>
+					<br>
+					<span>Вы можете скачать все шрифты стиля Рукописный, всего лишь нажав на кнопку ниже. Для каждого стиля шрифтов из списка сверху есть отдельные ссылки.</span>
+					<a href="/fonts/pack/Fonts-Handwritten.zip" download style="margin-top: 10px; border-radius: 30px; min-width: 270px;" class="button">Скачать шрифты Рукописный</a>
+				</div>
+
+				<div class="obj Creative desc" style="display: none;">
+					<h1 style="margin-bottom: 10px;">Креативный шрифт</h1>
+					<span>Креативный шрифт — это стиль, который выделяется нестандартными формами и оригинальными элементами. Он может сочетать различные графические подходы и использовать неожиданные решения, чтобы привлечь внимание и выразить индивидуальность. Креативные шрифты часто применяются в дизайне рекламных материалов, упаковки, постеров и других проектов, где важна уникальность и креативный подход.</span>
+					<br>
+					<span>Вы можете скачать все шрифты стиля Креативный, всего лишь нажав на кнопку ниже. Для каждого стиля шрифтов из списка сверху есть отдельные ссылки.</span>
+					<a href="/fonts/pack/Fonts-Creative.zip" download style="margin-top: 10px; border-radius: 30px; min-width: 270px;" class="button">Скачать шрифты Креативный</a>
+				</div>
+
+				<div style="background: none;">
+					<div class="block__interactive Antiqua">
+						<img src="fonts/Antiqua/Faberge.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Antiqua/Faberge.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Antiqua">
+						<img src="fonts/Antiqua/Gloriance.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Antiqua/Gloriance.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Gothic">
+						<img src="fonts/Gothic/destroyers.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Gothic/destroyers.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Gothic">
+						<img src="fonts/Gothic/The-Feyals.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Gothic/The-Feyals.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Grotesque">
+						<img src="fonts/Grotesque/AA Stetica.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Grotesque/AA Stetica.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Grotesque">
+						<img src="fonts/Grotesque/activistka.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Grotesque/activistka.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Handwritten">
+						<img src="fonts/Handwritten/Debby.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Handwritten/Debby.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Handwritten">
+						<img src="fonts/Handwritten/Yarin.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Handwritten/Yarin.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Creative">
+						<img src="fonts/Creative/Sangha.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Creative/font.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+
+					<div class="block__interactive Creative">
+						<img src="fonts/Creative/NeutralFace.jpg" alt="" style="border-radius: 30px;">
+						<a href="fonts/Creative/font.zip" download style="margin-top: 10px; border-radius: 30px;" class="button">Скачать</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer id="footer">
+		<img src="/img/Pod.webp" alt="">
+		<div class="contacts">
+			<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+			<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+			<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+			<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+			<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+		</div>
+		<span style="color: #fff;">©2023 Portfolio - Все права защищены</span>
+	</footer>
+	<script src="/js/links.js"></script>
+	<script> //Сортировка на сайте
+		let currentOption = 'All'
+
+		document.querySelector('.select-trigger').addEventListener('click', function() {
+		    this.parentNode.classList.toggle('open');
+		});
+
+		for (const option of document.querySelectorAll(".custom-option")) {
+		    option.addEventListener('click', function() {
+		        this.closest('.custom-select').querySelector('.select-trigger').textContent = this.textContent;
+		        this.closest('.custom-select').classList.remove('open');
+		        
+		        if(currentOption !== option.getAttribute('data-option')){
+		        	document.querySelectorAll('.' + currentOption).forEach((item) => {
+		        		item.style.display = 'none'
+		        	})
+
+		        	if(option.getAttribute('data-option') === 'All'){
+						document.querySelectorAll('.Antiqua').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Gothic').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Grotesque').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Handwritten').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelectorAll('.Creative').forEach((item) => {
+			        		item.style.display = ''
+			        	})
+			        	document.querySelector('.Antiqua').style.display = 'none'
+			        	document.querySelector('.Gothic').style.display = 'none'
+			        	document.querySelector('.Grotesque').style.display = 'none'
+			        	document.querySelector('.Handwritten').style.display = 'none'
+			        	document.querySelector('.Creative').style.display = 'none'
+		        	}else{
+		        		document.querySelectorAll('.Antiqua').forEach((item) => {
+		        			item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Gothic').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Grotesque').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Handwritten').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+			        	document.querySelectorAll('.Creative').forEach((item) => {
+			        		item.style.display = 'none'
+			        	})
+		        	}
+
+		        	currentOption = option.getAttribute('data-option')
+
+		        	document.querySelectorAll('.' + option.getAttribute('data-option')).forEach((item) => {
+		        		item.style.display = ''
+		        	})
+		        }
+		    });
+		}
+
+
+	</script>
+	
+	<script src="/js/burger.js"></script>
+	<script src="/js/toggle-mode.js"></script>
+	<script src="/js/header.js"></script>
+</body>
+</html>
