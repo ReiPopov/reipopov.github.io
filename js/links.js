@@ -13,3 +13,12 @@ function linkInstagram(){
 function linkDrive(){
 	window.open('https://www.artstation.com/rei-i', '_blank');
 }
+
+// PAGINATION - ART
+
+// const linkChild = document.createElement('a')
+
+// linkChild.href = '../page-1/index.html'
+// linkChild.href = '../page-1/index.html'
+
+// document.getElementById('pagination').appendChild(linkChild)

@@ -130,6 +130,8 @@ function zoomBlock() {
 let isDragging = false;
 let offsetX, offsetY;
 
+let cooo = document.querySelector('.section__1 div')?.childElementCount || 0;
+
 function startDragging(e) {
     isDragging = true;
     offsetX = e.clientX - fullScreenImage.getBoundingClientRect().left;
@@ -172,7 +174,7 @@ function ArrowToLeft(){
 }
 
 function ArrowToRight(){
-    if(currentImageIndex === 9){
+    if(currentImageIndex === cooo){
         currentImageIndex = currentImageIndex;
         fullScreenImage.src = 'item_' + currentImageIndex + '.webp';
         checkList()
@@ -186,7 +188,7 @@ function ArrowToRight(){
 }
 
 function checkList(){
-    for(let i = 1; i <= 9; i++){
+    for(let i = 1; i <= cooo; i++){
         document.getElementById('list__item-' + i).onclick = function(){
             fullScreenImage.src = 'item_' + i + '.webp';
             currentImageIndex = i;
@@ -196,7 +198,7 @@ function checkList(){
 }
 
 function activeListItem(){
-    for(let i = 1; i <= 9; i++){
+    for(let i = 1; i <= cooo; i++){
         document.getElementById('list__item-' + i).classList.remove('active-item');
         document.getElementById('list__item-' + currentImageIndex).classList.add('active-item');
     }

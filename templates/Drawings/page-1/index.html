@@ -99,15 +99,15 @@
 					    <img src="item_5.webp" alt="" id="image_5">
 					    <h1>Rick And Morty</h1>
 					</div>
-					<!-- <div class="block__interactive item">
-					    <img src="item_6.webp" alt="" id="image_6">
-					    <h1>Crossout</h1>
+					<div class="block__interactive item">
+					    <img src="item_6.webp" alt="" id="image_6" width="100%" height="200%">
+					    <h1>Rick And Morty</h1>
 					</div>
 					<div class="block__interactive item">
 					    <img src="item_7.webp" alt="" id="image_7">
-					    <h1>Crossout</h1>
+					    <h1>Rick And Morty</h1>
 					</div>
-					<div class="block__interactive item">
+					<!-- <div class="block__interactive item">
 					    <img src="item_8.webp" alt="" id="image_8">
 					    <h1>Crossout</h1>
 					</div>
@@ -147,10 +147,10 @@
 					<img src="item_3.webp" id="list__item-3">
 					<img src="item_4.webp" id="list__item-4">
 					<img src="item_5.webp" id="list__item-5">
-					<!-- <img src="item_6.webp" id="list__item-6">
+					<img src="item_6.webp" id="list__item-6">
 					<img src="item_7.webp" id="list__item-7">
-					<img src="item_8.webp" id="list__item-8">
-					<img src="item_9.webp" id="list__item-9"> -->
+					<!-- <img src="item_8.webp" id="list__item-8"> -->
+					<!-- <img src="item_9.webp" id="list__item-9"> -->
 				</div>
 			</div>
 		</div>
@@ -342,7 +342,7 @@
 			}
 		}
 		function ArrowToRight(){
-			if(currentImageIndex === 5){
+			if(currentImageIndex === 7){
 				currentImageIndex = currentImageIndex;
 				fullScreenImage.src = 'item_' + currentImageIndex + '.webp';
 				checkList()
@@ -356,7 +356,7 @@
 		}
 
 		function checkList(){
-		    for(let i = 1; i <= 5; i++){
+		    for(let i = 1; i <= 7; i++){
 		    	document.getElementById('list__item-' + i).onclick = function(){
 		    		fullScreenImage.src = 'item_' + i + '.webp';
 		    		currentImageIndex = i;
@@ -366,7 +366,7 @@
 		}
 
 		function activeListItem(){
-			for(let i = 1; i <= 5; i++){
+			for(let i = 1; i <= 7; i++){
 		        document.getElementById('list__item-' + i).classList.remove('active-item');
 		        document.getElementById('list__item-' + currentImageIndex).classList.add('active-item');
 		    }
