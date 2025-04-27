@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReIPopov | Дизайн</title>
+	<link rel="shortcut icon" href="/img/siteLogo.webp">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/burger.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+	<link rel="stylesheet" href="/css/adaptive.css">
+	<link rel="stylesheet" href="/css/toggle-mode.css">
+	<link rel="stylesheet" href="/css/fullScreen.css">
+
+	<style>
+		.section__1 > img {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+			margin: 10px 0px;
+		}
+		.section__1 > p {
+			margin: 10px 0;
+			font-size: 20px;
+		}
+
+		.slider {
+			display: flex;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.slider > img {
+			width: 100%;
+			border-radius: 10px;
+			transition: .3s;
+		}
+
+		.slider > i {
+			position: absolute;
+			top: 50%;
+
+			color: #ffbe41;
+			opacity: .7;
+			font-size: 32px;
+			transition: .3s;
+			cursor: pointer;
+			text-shadow: 2px 2px 1px #000;
+		}
+		.slider > i:hover{
+			color: #ffbe41;
+			opacity: 1;
+			transform: scale(1.3);
+		}
+	</style>
+</head>
+<body id="body">
+	<header id="header">
+		<img src="/img/logo.webp" alt="" width="103px" height="24px">
+		<i class="fa-solid fa-sun" id="toggle-mode"></i>
+		<a href="../index.html" style="color: #fff; margin: 10px 0; font-size: 22px; font-weight: 700;" id="back">
+			<i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>Назад
+		</a>
+	</header>
+	<main id="main">
+		<div class="intro">
+			<img src="banner.webp" alt="" style="height: 100%; position: absolute; z-index: -1; width: 100%; object-fit: cover;">
+			<h1>Листовки</h1>
+		</div>
+		<div class="container">
+			<section class="section__1">
+				<section class="slider">
+					<i class="fa-solid fa-arrow-left" style="left: 0; margin-left: 10px;" onclick="leftBtn()"></i>
+					<img src="slide1.webp" alt="" id="slide-1">
+					<img src="slide2.webp" alt="" id="slide-2">
+					<img src="slide3.webp" alt="" id="slide-3">
+					<img src="slide4.webp" alt="" id="slide-4">
+					<img src="slide5.webp" alt="" id="slide-5">
+					<i class="fa-solid fa-arrow-right" style="right: 0; margin-right: 10px;" onclick="rightBtn()"></i>
+				</section>
+
+				<p>
+					<strong>Дизайн листовок тарифа "Жыргалай"</strong>
+					<br>
+					<br>
+					Для рекламной кампании тарифа "Жыргалай" от Кыргызтелекома мной были разработаны два 
+различных дизайна листовок. Основной задачей было создание яркого и запоминающегося 
+визуального образа, который привлек бы внимание клиентов и легко передавал суть 
+предложения.
+					<br>
+					<br>
+					Первый вариант дизайна был ориентирован на минимализм и лаконичность. Я использовал 
+основные фирменные цвета компании, добавив акценты в виде графических элементов, которые 
+символизируют технологичность и современность услуг. Второй вариант был более креативным, с 
+акцентом на яркие визуальные образы, создающие ассоциации с комфортом и удобством, 
+которые предоставляются пользователям тарифа "Жыргалай".
+					<br>
+					<br>
+					Оба варианта были тщательно продуманы с точки зрения визуальной иерархии, чтобы 
+информация о тарифе была легко воспринимаема и понятна. В результате созданные листовки 
+стали неотъемлемой частью маркетинговой кампании и успешно привлекли новых 
+пользователей.
+				</p>
+				<img src="1.webp" alt="" class="item">
+				<img src="2.webp" alt="" class="item">
+				<img src="3.webp" alt="" class="item">
+				<img src="4.webp" alt="" class="item">
+				<img src="5.webp" alt="" class="item">
+			</section>
+		</div>
+		<div class="fullScreen" style="display: none;">
+			<i class="fa-solid fa-xmark" id="fullScreenBtn__close"></i>
+
+			<div class="fullScreen__window">
+				<i class="fa-solid fa-arrow-left" id="fullScreenBtn__ToLeft" onclick="ArrowToLeft()"></i>
+				<img src="" alt="" id="fullScreen__image" style="object-fit: cover;">
+				<i class="fa-solid fa-arrow-right" id="fullScreenBtn__ToRight" onclick="ArrowToRight()"></i>
+			</div>
+
+			<div class="fullScreen__bottom">
+				<div class="list_controle" style="width: 50px;">
+					<button id="zoom_btn" onclick="zoomBlock()"><i class="fa-solid fa-magnifying-glass"></i></button>
+					<div id="zoom_block" style="display: none; width: 145px; right: -130px;">
+						<input type="range" min="0" max="9" id="size" oninput="sizePic()" value="0"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<img src="/img/Pod.webp" alt="">
+		<div class="contacts">
+			<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+			<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+			<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+			<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+			<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+		</div>
+		<span style="color: #fff;">©2023 Portfolio - Все права защищены</span>
+	</footer>
+	<script src="/js/links.js"></script>
+
+
+	<script src="/js/toggle-mode.js"></script>
+	<script src="/js/burger.js"></script>
+	<script>
+		let slide1 = document.querySelector('#slide-1');
+		let left = document.querySelector('.fa-solid.fa-arrow-left');
+		let right = document.querySelector('.fa-solid.fa-arrow-right');
+
+		slideCount = 1;
+
+		function leftBtn(){
+			if(slideCount === 1){
+				slideCount = 1;
+			}else{
+				slideCount -= 1
+			}
+			sliding()
+		}
+
+		function rightBtn(){
+			if(slideCount === 5){
+				slideCount = 5;
+			}else{
+				slideCount += 1
+			}
+			sliding()
+		}
+
+		function sliding(){
+			if(slideCount === 1){
+				slide1.style.marginLeft = '0px';
+			}else if(slideCount === 2){
+				slide1.style.marginLeft = '-100%';
+			}else if(slideCount === 3){
+				slide1.style.marginLeft = '-200%';
+			}else if(slideCount === 4){
+				slide1.style.marginLeft = '-300%';
+			}else if(slideCount === 5){
+				slide1.style.marginLeft = '-400%';
+			};
+		};
+	</script>
+	<script>
+		const header = document.getElementById('header');
+		const body = document.getElementById('body');
+		const fullScreen = document.querySelector('.fullScreen');
+		const fullScreenImage = document.getElementById('fullScreen__image');
+		const fullScreenBtnZoom = document.getElementById('fullScreenBtn__zoom');
+		const fullScreenBtnClose = document.getElementById('fullScreenBtn__close');
+		const fullScreen__bottom = document.querySelector('.fullScreen__bottom');
+
+		const fullScreenWindow = document.querySelector('.fullScreen__window');
+		let zoom_block = document.getElementById('zoom_block');
+
+		let currentImageIndex;
+		let lastImageIndex = 5;
+
+		document.querySelectorAll('.item').forEach((item, index) => {
+			item.addEventListener('click', () => {
+				currentImageIndex = index + 1;
+				header.style.display = 'none';
+				body.style.overflow = 'hidden';
+				fullScreen.style.display = '';
+				fullScreenImage.src = item.src;
+				document.documentElement.requestFullscreen();
+
+				fullScreenImage.style.width = 'auto';
+				fullScreenImage.style.height = 'auto';
+				fullScreenImage.style.maxWidth = '100%';
+				fullScreenImage.style.maxHeight = '100%';
+			});
+		});
+
+		function ArrowToLeft(){
+		    if(currentImageIndex === 1){
+		        currentImageIndex = currentImageIndex;
+		        fullScreenImage.src = '' + currentImageIndex + '.webp';
+		    }else{
+		        currentImageIndex = currentImageIndex - 1;
+		        fullScreenImage.src = '' + currentImageIndex + '.webp';
+		    }
+		}
+
+		function ArrowToRight(){
+		    if(currentImageIndex === lastImageIndex){
+		        currentImageIndex = currentImageIndex;
+		        fullScreenImage.src = '' + currentImageIndex + '.webp';
+		    }else{
+		        currentImageIndex = currentImageIndex + 1;
+		        fullScreenImage.src = '' + currentImageIndex + '.webp';
+		    }
+		}
+
+		fullScreenBtnClose.addEventListener('click', function() {
+			fullScreenClose()
+		})
+
+		function fullScreenClose(){
+			header.style.display = '';
+			body.style.overflow = 'visible';
+			fullScreen.style.display = 'none';
+			document.exitFullscreen();
+
+			zoomBlockVisible = false;
+
+			document.getElementById('zoom_block').style.display = 'none';
+			fullScreenImage.removeEventListener('mousedown', startDragging);
+			document.removeEventListener('mousemove', dragElement);
+			document.removeEventListener('mouseup', stopDragging);
+
+			fullScreenImage.style.top = '';
+			fullScreenImage.style.left = '';
+			document.getElementById("size").value = '0'
+
+			fullScreenImage.style.cursor = 'default';
+
+			fullScreenImage.style.width = 'auto';
+			fullScreenImage.style.height = 'auto';
+			fullScreenImage.style.maxWidth = '100%';
+			fullScreenImage.style.maxHeight = '100%';
+		}
+		document.addEventListener('keydown', function(e) {
+			if (e.key === "Escape"){
+				fullScreenClose()
+			}
+		});
+
+		let zoomBlockVisible = false;
+
+		function zoomBlock() {
+		    if (zoomBlockVisible === false) {
+		        document.getElementById('zoom_block').style.display = '';
+		        zoomBlockVisible = true;
+
+		        fullScreenImage.addEventListener('mousedown', startDragging);
+		        document.addEventListener('mousemove', dragElement);
+		        document.addEventListener('mouseup', stopDragging);
+
+		        fullScreenImage.style.cursor = 'grab';
+		        fullScreenImage.style.width = '100%';
+		        fullScreenImage.style.height = '';
+		        fullScreenImage.style.maxWidth = '';
+		        fullScreenImage.style.maxHeight = '';
+		    } else {
+		        zoomBlockVisible = false;
+
+		        document.getElementById('zoom_block').style.display = 'none';
+		        fullScreenImage.removeEventListener('mousedown', startDragging);
+		        document.removeEventListener('mousemove', dragElement);
+		        document.removeEventListener('mouseup', stopDragging);
+
+		        fullScreenImage.style.top = '';
+		        fullScreenImage.style.left = '';
+		        document.getElementById("size").value = '0'
+
+		        fullScreenImage.style.cursor = 'default';
+
+		        fullScreenImage.style.width = 'auto';
+		        fullScreenImage.style.height = 'auto';
+		        fullScreenImage.style.maxWidth = '100%';
+		        fullScreenImage.style.maxHeight = '100%';
+		    }
+		}
+
+		let isDragging = false;
+		let offsetX, offsetY;
+
+		function startDragging(e) {
+		    isDragging = true;
+		    offsetX = e.clientX - fullScreenImage.getBoundingClientRect().left;
+		    offsetY = e.clientY - fullScreenImage.getBoundingClientRect().top;
+		    fullScreenImage.style.cursor = 'grabbing';
+		    e.preventDefault();
+		}
+
+		function dragElement(e) {
+		    if (isDragging) {
+		        fullScreenImage.style.left = `${e.clientX - offsetX}px`;
+		        fullScreenImage.style.top = `${e.clientY - offsetY}px`;
+		        e.preventDefault()
+		    }
+		}
+
+		function stopDragging() {
+		    isDragging = false;
+		    fullScreenImage.style.cursor = 'grab';
+		}
+
+
+		function sizePic() {
+			size = document.getElementById("size").value;
+			fullScreenImage.style.width = 100 + 10*size + '%';
+		}
+	</script>
+	<script src="/js/header.js"></script>
+</body>
+</html>

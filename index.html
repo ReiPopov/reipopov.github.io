@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ReIPopov | Главная страница</title>
+	<link rel="shortcut icon" href="/img/siteLogo.webp">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/burger.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/toggle-mode.css">
+
+	<!-- Метатеги -->
+	<meta property="og:title" content="Rei Popov | Портфолио">
+	<meta property="og:description" content="Описание страницы">
+	<meta property="og:image" content="img/LogoRei-2.webp">
+	<meta property="og:url" content="https://daulet050kz.github.io">
+	<meta property="og:type" content="website">
+
+	<style>
+		#category {
+			overflow-x: hidden;
+			flex-wrap: nowrap;
+			min-width: 350px;
+			max-height: auto;
+			width: 100%;
+		}
+		#categoryScroll > button {
+			margin: 0 5px;
+			background-color: #ffbe41;
+			border: none;
+			outline: none;
+			border-radius: 50%;
+			font-size: 22px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			cursor: pointer;
+			padding: 5px;
+		}
+
+		#category > a.block__interactive {
+			transition: 1s;
+		}
+
+		#category > a.block__interactive > img {
+			filter: grayscale(100%);
+		}
+
+		#category > a.block__interactive:hover > img {
+			filter: grayscale(0%);
+		}
+	</style>
+</head>
+<body id="body">
+	<header id="header">
+		<img src="/img/logo.webp" alt="" width="103px" height="24px">
+		<div class="navbar">
+			<ul>
+				<li><a href="/index.html" style="color: #fff; border-bottom: 2px solid #ffbe41; opacity: 1;">Главная</a></li>
+				<li><a href="/templates/Art/page-1/index.html">Арты</a></li>
+				<li><a href="/templates/Drawings/page-1/index.html">Рисунки</a></li>
+				<li><a href="/templates/3D/page-1/index.html">3D Работы</a></li>
+				<li><a href="/templates/Design/page-1/index.html">Дизайн</a></li>
+				<li><a href="/templates/Lettering/page-1/index.html">Леттеринг</a></li>
+				<li><a href="/templates/Logo/page-1/index.html">Логотипы</a></li>
+				<li><a href="/templates/UX/page-1/index.html">Макеты сайтов</a></li>
+				<li><a href="/templates/BookDesign/page-1/index.html">Дизайн книги</a></li>
+				<li><a href="/templates/Autobiography/index.html">Автобиография</a></li>
+				<li><a href="/templates/Blog/page-1/index.html">Блог</a></li>
+				<li><a href="/templates/CONTACTS.html">Контакты</a></li>
+			</ul>
+		</div>
+		<i class="fa-solid fa-sun" id="toggle-mode"></i>
+		<div id="nav-icon6">
+		    <span></span>
+		</div>
+	</header>
+
+	<div id="burger">
+		<div>
+			<a href="/index.html"><span style="color: #ffbe41;">•</span> Главная</a>
+			<h2 id="burger__portfolio-btn">Мое портолио <i class="fa-solid fa-caret-down" style="transition: .3s;"></i></h2>
+			<div id="burger__portfolio" style="height: 0%; display: none;">
+				<a id="bpi__1" href="/templates/Art/page-1/index.html"><span>•</span> Арты</a>
+				<a id="bpi__2" href="/templates/Drawings/page-1/index.html"><span>•</span> Рисунки</a>
+				<a id="bpi__3" href="/templates/3D/page-1/index.html"><span>•</span> 3D Работы</a>
+				<a id="bpi__4" href="/templates/Design/page-1/index.html"><span>•</span> Дизайн</a>
+				<a id="bpi__5" href="/templates/Lettering/page-1/index.html"><span>•</span> Леттеринг</a>
+				<a id="bpi__6" href="/templates/Logo/page-1/index.html"><span>•</span> Логотипы</a>
+				<a id="bpi__7" href="/templates/UX/page-1/index.html"><span>•</span> Макеты сайтов</a>
+				<a id="bpi__8" href="/templates/BookDesign/page-1/index.html"><span>•</span> Дизайн книги</a>
+			</div>
+
+			<a href="/templates/Autobiography/index.html"><span>•</span> Автобиография</a>
+			<a href="/templates/Blog/page-1/index.html"><span>•</span> Блог</a>
+			<a href="/templates/CONTACTS.html"><span>•</span> Контакты</a>
+			
+		</div>
+		<footer id="footer">
+			<div class="contacts">
+				<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+				<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+				<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+				<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+				<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+			</div>
+		</footer>
+	</div>
+
+	<main id="main" style="margin-top: 0;">
+		<div class="intro" style="background-image: url('/img/intro.webp'); background-size: cover; width: 100%; height: 100vh;">
+			<h1>Portfolio</h1>
+			<span>HI, MY NAME IS REI - GRAPHIC DESIGNER</span>
+			<a href="">Behance</a>
+		</div>
+		<div class="container">
+			<section class="section__1">
+				<h1>КАТЕГОРИИ РАБОТ</h1>
+				<div id="category">
+					<a href="/templates/Art/page-1/index.html" class="block__interactive cF1" style="margin: 10px;">
+						<img src="img/categories/Preview-Art.jpg" alt="">
+						<h1>Арты</h1>
+					</a>
+					<a href="/templates/Drawings/page-1/index.html" class="block__interactive cF2" style="margin: 10px;">
+						<img src="img/categories/Preview-Drawings.jpg" alt="">
+						<h1>Рисунки</h1>
+					</a>
+					<a href="/templates/Design/page-1/index.html" class="block__interactive cF4" style="margin: 10px;">
+						<img src="img/categories/Preview-Design.jpg" alt="">
+						<h1>Дизайн</h1>
+					<a href="/templates/3D/page-1/index.html" class="block__interactive cF3" style="margin: 10px;">
+						<img src="img/categories/Preview-3D.jpg" alt="">
+						<h1>3D Работы</h1>
+					</a>
+					<a href="/templates/Lettering/page-1/index.html" class="block__interactive cF5" style="margin: 10px;">
+						<img src="img/categories/Preview-Lettering.jpg" alt="">
+						<h1>Леттеринг</h1>
+					</a>
+					<a href="/templates/UX/page-1/index.html" class="block__interactive cF6" style="margin: 10px;">
+						<img src="img/categories/Preview-UX.jpg" alt="">
+						<h1>Макеты сайтов</h1>
+					</a>
+					<a href="/templates/BookDesign/page-1/index.html" class="block__interactive cF7" style="margin: 10px;">
+						<img src="img/categories/Preview-BookDesign.jpg" alt="">
+						<h1>Дизайн книги</h1>
+					</a>
+					<a href="/templates/Logo/page-1/index.html" class="block__interactive cF8" style="margin: 10px;">
+						<img src="img/categories/Preview-Logo.jpg" alt="">
+						<h1>Логотипы</h1>
+					</a>
+					<a href="/templates/Blog/page-1/index.html" class="block__interactive cF9" style="margin: 10px;">
+						<img src="img/categories/Preview-Blog.jpg" alt="">
+						<h1>Блог</h1>
+					</a>
+				</div>
+				<div id="categoryScroll" style="flex-wrap: nowrap; flex-direction: row;">
+					<button id="categoryLeft">
+						<i class="fa-solid fa-arrow-left"></i>
+					</button>
+					<button id="categoryRight">
+						<i class="fa-solid fa-arrow-right"></i>
+					</button>
+				</div>
+			</section>
+			<section class="section__2">
+				<h1>ОБ АВТОРЕ</h1>
+				<div>
+					<img src="/img/siteLogo.webp" alt="" width="285px" height="285px">
+					<div style="display: flex; flex-direction: column;">
+						<p style="margin-top: 5px;">Вы попали в мой уголок творчества. Я делюсь своим творчеством с общественностью, стараясь захватить всевозможные стороны такого направления, как "Дизайн"</p>
+						<p style="margin: 5px 0;">• Хотите оформить свой проект, например: канал, группу, страницу, сайт, обложку для альбома (или что либо другое)?</p>
+						<p style="margin: 5px 0;">• Или же сделать крутой арт, которым вы сможете украсить свои соц.сети или домашний интерьер, а также сделать отличный подарок другу/девушке (и не только), который запомнится на долго.</p>
+						<p style="margin: 5px 0;">• Опыт работы в данной сфере 3 года.</p>
+						<p style="margin: 5px 0;">• Работаю в таких программах, как: Illustrator, Photoshop, CorelDRAW, Cinema 4D, Blender.</p>
+						<a href="/templates/Autobiography/index.html" style="margin-top: 5px; border-radius: 30px;" class="button">Автобиография</a>
+					</div>
+				</div>
+				<div style="margin-top: 20px;">
+					<img src="/img/Сертификат.webp" alt="" width="285px" height="285px">
+					<div style="display: flex; flex-direction: column;">
+						<p style="margin-top: 5px; font-weight: 700;" >Сертификат об успешном оконании графического дизайна в школе OneClick</p>
+						<p style="margin: 5px 0;">Я прошел курсы графического дизайна в школе OneClick, где значтельно расширил свои навыки и знания в области дизайна. В ходе обучение я овладел работой с такими программами, как:</p>
+						<p style="margin: 5px 0;">• Adobe Photoshop</p>
+						<p style="margin: 5px 0;">• Adobe InDesign</p>
+						<p style="margin: 5px 0;">• Adobe Illustrator</p>
+						<p style="margin: 5px 0;">• CorelDRAW</p>
+						<p style="margin: 5px 0;">Курсы в OneClick дали мне всесторонее понимание процессов и инструментов, необходимых для профессиональной работы в сфере графического дизайна.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section__5">
+				<h1>ПОЧЕМУ МНЕ ДОВЕРЯЮТ?</h1>
+				<div>
+					<div class="block__interactive" style="margin: 10px;">
+						<div><div><span style="font-size: 42px; line-height: normal;" id="bi-1">5</span> <span style="font-size: 32px;">ЛЕТ</span></div> <span style="font-size: 24px;">РАБОТЫ</span></div>
+						<span style="text-align: center;">Разработал десятки брендов, сотни рекламных материалов. Работаю с крупными компаниями СНГ и стартапами, создавая уникальный стиль.</span>
+					</div>
+					<div class="block__interactive" style="margin: 10px;">
+						<div><span style="font-size: 42px; line-height: normal;" id="bi-2">50+</span> <span style="font-size: 24px;">ПРОЕКТОВ</span></div>
+						<span style="text-align: center;">От логотипов и брендбуков до упаковки и рекламы — создаю работы, которые выделяют бизнес.</span>
+					</div>
+					<div class="block__interactive" style="margin: 10px;">
+						<div><span style="font-size: 42px; line-height: normal;" id="bi-3">100+</span> <span style="font-size: 24px;">ДОВОЛЬНЫХ КЛИЕНТОВ</span></div>
+						<span style="text-align: center;">Работаю с малым бизнесом и крупными брендами, создавая дизайн, который приносит результат.</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="section__6">
+				<h1>ЭТАПЫ РАЗРАБОТКИ ДИЗАЙНА</h1>
+				<div class="s6PC">
+					<div class="tables__progress">
+						<input type="radio" name="tables__progress" id="tp-1">
+						<input type="radio" name="tables__progress" id="tp-2">
+						<input type="radio" name="tables__progress" id="tp-3">
+						<input type="radio" name="tables__progress" id="tp-4">
+						<input type="radio" name="tables__progress" id="tp-5">
+						<input type="radio" name="tables__progress" id="tp-6">
+
+						<label for="tp-1" class="checked">01. <span>Изучение ТЗ</span></label>
+						<label for="tp-2">02. <span>Анализ конкурентов</span></label>
+						<label for="tp-3">03. <span>Сбор референсов</span></label>
+						<label for="tp-4">04. <span>Эскизы и концепции</span></label>
+						<label for="tp-5">05. <span>Создание финального дизайна</span></label>
+						<label for="tp-6">06. <span>Презентация и правки</span></label>
+					</div>
+
+					<div class="item__progress">
+						<div id="i__p-1" class="focus">
+							<label>
+								<img src="/img/s6Ico/1.png" alt="">
+								<img src="/img/s6Ico/1-.png" alt="" class="lf">
+							</label>
+							<span>Анализ требований, целей проекта и пожеланий заказчика.</span>
+						</div>
+						<div id="i__p-2">
+							<label>
+								<img src="/img/s6Ico/2.png" alt="">
+								<img src="/img/s6Ico/2-.png" alt="" class="lf">
+							</label>
+							<span>Изучение рынка, стиля конкурентов и актуальных трендов.</span>
+						</div>
+						<div id="i__p-3">
+							<label>
+								<img src="/img/s6Ico/3.png" alt="">
+								<img src="/img/s6Ico/3-.png" alt="" class="lf">
+							</label>
+							<span>Подбор вдохновляющих примеров и создание мудборда.</span>
+						</div>
+						<div id="i__p-4">
+							<label>
+								<img src="/img/s6Ico/4.png" alt="">
+								<img src="/img/s6Ico/4-.png" alt="" class="lf">
+							</label>
+							<span>Разработка первых вариантов дизайна, наброски.</span>
+						</div>
+						<div id="i__p-5">
+							<label>
+								<img src="/img/s6Ico/5.png" alt="">
+								<img src="/img/s6Ico/5-.png" alt="" class="lf">
+							</label>
+							<span>Детальная проработка, отрисовка, подбор шрифтов и цветов.</span>
+						</div>
+						<div id="i__p-6">
+							<label>
+								<img src="/img/s6Ico/6.png" alt="">
+								<img src="/img/s6Ico/6-.png" alt="" class="lf">
+							</label>
+							<span>Согласование с заказчиком, корректировки и финальная сдача проекта.</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="s6Mobile">
+					<div class="s6MobileI focus item1">
+						<span>01. Изучение ТЗ</span>
+						<div>
+							<img src="/img/s6Ico/1-.png" alt="" class="lf">
+							<p>Анализ требований, целей проекта и пожеланий заказчика.</p>
+						</div>
+					</div>
+					<div class="s6MobileI item2">
+						<span>02. Анализ конкурентов</span>
+						<div>
+							<img src="/img/s6Ico/2-.png" alt="" class="lf">
+							<p>Изучение рынка, стиля конкурентов и актуальных трендов.</p>
+						</div>
+					</div>
+					<div class="s6MobileI item3">
+						<span>03. Сбор референсов</span>
+						<div>
+							<img src="/img/s6Ico/3-.png" alt="" class="lf">
+
+							<p>Подбор вдохновляющих примеров и создание мудборда.</p>
+						</div>
+					</div>
+					<div class="s6MobileI item4">
+						<span>04. Эскизы и концепции</span>
+						<div>
+							<img src="/img/s6Ico/4-.png" alt="" class="lf">
+
+							<p>Разработка первых вариантов дизайна, наброски.</p>
+						</div>
+					</div>
+					<div class="s6MobileI item5">
+						<span>05. Создание финального дизайна</span>
+						<div>
+							<img src="/img/s6Ico/5-.png" alt="" class="lf">
+							<p>Детальная проработка, отрисовка, подбор шрифтов и цветов.</p>
+						</div>
+					</div>
+					<div class="s6MobileI item6">
+						<span>06. Презентация и правки</span>
+						<div>
+							<img src="/img/s6Ico/6-.png" alt="" class="lf">
+
+							<p>Согласование с заказчиком, корректировки и финальная сдача проекта.</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section__3" style="width: 1152px;">
+				<h1>МОИ НАВЫКИ</h1>
+				<div style="width: 100%; justify-content: center;">
+					<div class="section__3-skills">
+						<span>— Графический дизайн</span>
+						<span>— Иллюстрация и концепт арт</span>
+						<span>— Фотобаш и фотоманипуляции</span>
+						<span>— Лезу в 3D и анимацию</span>
+						<span>— Фотографирую</span>
+						<span>— UХ/UI дизайн макетов сайтов</span>
+						<span>— Оформление соц. сетей</span>
+						<span>— Леттеринг</span>
+					</div>
+					<div>
+						<div class="section__diagramm Photoshop">
+							<h4>90</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Photoshop.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm Illustrator">
+							<h4>80</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Illustrator.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm CorelDraw">
+							<h4>80</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/CorelDraw.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm Figma">
+							<h4>70</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Figma.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm InDesign">
+							<h4>60</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/InDesign.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="section__diagramm Blender">
+							<h4>50</h4>
+							<div style="height: 0%;" class="diagramm">
+								<img src="img/section_3/Blender.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section__4" style="position: relative; margin-bottom: 30px;">
+				<h1>ОТЗЫВЫ КЛИЕНТОВ</h1>
+				<div style="position: relative;" class="s4reviews">
+					<div class="reviews_btns" style="display: flex; flex-direction: row;">
+						<label id="reviews__label-left" style="background-color: #bdbdbd;" onclick="reviewsToLeft()"><i class="fa-solid fa-arrow-left"></i></label>
+						<label id="reviews__label-right" style="background-color: #bdbdbd;" onclick="reviewsToRight()"><i class="fa-solid fa-arrow-right"></i></label>
+					</div>
+
+					<div class="block__interactive review_1">
+						<h3>Андрей Черепанов</h3>
+						<span>Заказывал у Rei арт-коллажи со своим персонажем из игры. Все детали обсудили предварительно, в процессе вносили правки. Работы выполнены быстро и в срок. Все пожелания учтены. Претензий к качеству нет. На руки получил много вариантов работ + PSD. Рекомендую.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Руслан Днепровский</h3>
+						<span>Изволю оставить свой отзыв.Мне очень понравилась работа автора в плане обработки и оформления моей группы "Вк" и канала на "YouTube". Rei сделал все качественно и в сроки, что удивительно, ведь это не так просто. При этом? Rei сделал сразу несколько вариантов шапок (3 шт) и логотип выполненной в "Векторной графике". Я очень доволен итоговому результату. От всего сердца говорю Спасибо!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Виталичек Колесников</h3>
+						<span>Я не очень многословен, но парень знает свое дело, результат просто блеск, мне очень понравилось! Одним словом - буду обращаться еще и вам советую! Скинул все, и там где нужно было что-то доделать - доделали, отзывчивый, исполнительный и понимающий - это Rei</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Даулет Боран</h3>
+						<span>Rei - Художник знающий свое дело, не раз ходил к нему за дизайном и не раз не был не удовлетворён итогом, хороший профессионал, знающий свое дело.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Айгүл Токтогулова</h3>
+						<span>Заказывала оформление Instagram-ленты и сторис. Всё было сделано очень профессионально, аккуратно и стильно. Учли фирменные цвета и общую эстетику бренда. Получила итоговые файлы вовремя. Спасибо за качественную работу!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Роман Ковальчук</h3>
+						<span>Обращался за разработкой баннеров для рекламы. Всё обсудили заранее, быстро нашли общий язык. Макеты были готовы в срок, с отличным визуалом. Работать было легко, результат понравился. Уровень — отличный.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Чынгыз Мамытов</h3>
+						<span>Нужен был дизайн флаера для мероприятия. Все этапы — от обсуждения до финального варианта — прошли быстро и удобно. Получил как исходники, так и готовые файлы для печати. Рекомендую, всё было супер.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Елена Соколова</h3>
+						<span>Спасибо за стильные обложки для контента! Работы получились яркие, сочные, при этом в едином стиле. Удобно, что дизайнер сам предложил несколько вариантов, из которых легко было выбрать. Обязательно обращусь снова.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Нурлан Абдраимов</h3>
+						<span>Заказал оформление презентации. Получилось очень современно и аккуратно, с хорошей читаемостью. Цветовая гамма идеально подошла под тему проекта. Понравилось, что можно было внести корректировки по ходу.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Алина Исмаилова</h3>
+						<span>Делала заказ на визуал для упаковки. Все идеи были сразу поняты и реализованы. Получила итог в нескольких форматах, с возможностью допечати. Очень понравился подход и вкус в деталях. Спасибо!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Максим Ефремов</h3>
+						<span>Работали над серией баннеров для сайта. Подход организованный: всё обсуждалось заранее, был учёт всех правок. Файлы были сданы вовремя, итог превзошёл ожидания. Приятно работать с профессионалом.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Бакытбек Жапаров</h3>
+						<span>Обратился за дизайном для рекламной кампании. Получил проработанный, яркий визуал, который сразу привлек внимание аудитории. Учитывались фирменные элементы и стилистика. Работой остался доволен.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Диана Шевченко</h3>
+						<span>Нужен был макет меню для кафе. Предложили несколько удачных решений. Всё было выполнено точно в срок, красиво и понятно. Получила макеты для печати и веба. Очень комфортное сотрудничество.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Эрмек Садыков</h3>
+						<span>Спасибо за отличную работу по оформлению брендбука. Всё чётко, со знанием дела. Учтены цвета, шрифты, логотип, все элементы на месте. Работать было удобно и продуктивно. Буду рекомендовать.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Анастасия Петренко</h3>
+						<span>Заказывала оформление для маркетплейса. Получилось современно и удобно для восприятия. Всё выполнено аккуратно, без лишнего. Дизайнер всегда был на связи, вносил корректировки быстро. Спасибо!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Темирлан Исаев</h3>
+						<span>Отличный подход к задаче. Заказывал оформление для Telegram-канала. Быстро нашли общий стиль, всё смотрится целостно. Получил все форматы и рекомендации. Результат понравился!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Ирина Ким</h3>
+						<span>Очень понравился дизайн упаковки! Всё сделано в стиле бренда, современно и вкусно. Было несколько версий, выбрать было из чего. Работать с таким дизайнером — удовольствие. Благодарю за профессионализм.</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Нурия Таштанова</h3>
+						<span>Обратилась за афишей для ивента. Получила стильный, динамичный макет, идеально вписывающийся в тематику. Порадовал внимательный подход к деталям и быстрые сроки. Всё понравилось!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>Олег Кузнецов</h3>
+						<span>Сотрудничаем не в первый раз. На этот раз заказывал обложки и баннеры. Всё выполнено в едином стиле, с хорошей подачей. Файлы сразу пригодны к размещению. Спасибо за стабильность и качество!</span>
+					</div>
+					<div class="revSection"></div>
+					<div class="block__interactive">
+						<h3>EMPTY ERROR</h3>
+						<span>[404]</span>
+					</div>
+				</div>
+
+				<div class="reviews_count" style="">
+					<label for="revCount1" class="revLab0 focusReview"></label>
+					<label for="revCount2" class="revLab1"></label>
+					<label for="revCount3" class="revLab2"></label>
+					<label for="revCount4" class="revLab3"></label>
+					<label for="revCount5" class="revLab4"></label>
+					<label for="revCount6" class="revLab5"></label>
+					<label for="revCount7" class="revLab6"></label>
+					<label for="revCount8" class="revLab7"></label>
+					<label for="revCount9" class="revLab8"></label>
+					<label for="revCount10" class="revLab9"></label>
+				</div>
+			</section>
+
+			<section class="section__7" style="position: relative;">
+				<h1>ПАРТНЕРЫ И КЛИЕНТЫ</h1>
+				<div class="s7Brands">
+					<div class="s7Brand">
+						<img src="/img/s7/s1.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n1.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s2.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n2.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s3.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n3.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s4.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n4.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s5.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n5.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s6.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n6.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s7.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n7.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s8.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n8.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s9.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n9.png" alt="">
+					</div>
+					<div class="s7Brand">
+						<img src="/img/s7/s10.png" alt="" class="s7BrandS">
+						<img src="/img/s7/n10.png" alt="">
+					</div>
+				</div>
+
+				<div class="s7Count">
+					<input type="range" min="0" max="80" step="1" value="0">
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer id="footer">
+		<img src="/img/Pod.webp" alt="">
+		<div class="contacts">
+			<i class="fa-brands fa-square-facebook" onclick="linkFacebook()"></i>
+			<i class="fa-brands fa-vk" onclick="linkVK()"></i>
+			<i class="fa-brands fa-square-behance" onclick="linkBehance()"></i>
+			<i class="fa-brands fa-square-instagram" onclick="linkInstagram()"></i>
+			<i class="fa-brands fa-artstation" onclick="linkDrive()"></i>
+		</div>
+		<span style="color: #fff;">©2023 Portfolio - Все права защищены</span>
+	</footer>
+
+	<div class="enter__animation" style="background-color: #000; position: absolute; position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height: 100vh; transition: 1s; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+		<img id="enter__logo" src="/img/LogoRei-2.webp" alt="" style="opacity: 0; transition: 1s;">
+	</div>
+
+	<div class="stage__bar">
+		<h4 class="stage__0">0</h4>
+		<h4 class="stage__1">1</h4>
+		<h4 class="stage__2">2</h4>
+		<h4 class="stage__3">3</h4>
+		<h4 class="stage__4">4</h4>
+		<h4 class="stage__5">5</h4>
+	</div>
+	<script src="/js/links.js"></script>
+	<script>
+		const intro = document.querySelector('.intro')
+		const header = document.querySelector('#header')
+
+		document.querySelector('.stage__0').addEventListener('click', function(){
+			document.querySelector('.intro').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__1').addEventListener('click', function(){
+			document.querySelector('.section__1').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__2').addEventListener('click', function(){
+			document.querySelector('.section__2').scrollIntoView({ behavior: "smooth", block: "start" });
+		});
+		document.querySelector('.stage__3').addEventListener('click', function(){
+			document.querySelector('.section__5').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__4').addEventListener('click', function(){
+			document.querySelector('.section__3').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+		document.querySelector('.stage__5').addEventListener('click', function(){
+			document.querySelector('.section__4').scrollIntoView({ behavior: "smooth", block: "center" });
+		});
+
+
+		let prevScrollpos = window.pageYOffset;
+		function handleResize() {
+		    if (window.matchMedia('(max-width: 1023px)').matches) {
+				const diagramm_photoshop = document.querySelector('.section__diagramm.Photoshop').querySelector('.diagramm')
+				const diagramm_illustrator = document.querySelector('.section__diagramm.Illustrator').querySelector('.diagramm')
+				const diagramm_corelDraw = document.querySelector('.section__diagramm.CorelDraw').querySelector('.diagramm')
+				const diagramm_figma = document.querySelector('.section__diagramm.Figma').querySelector('.diagramm')
+				const diagramm_indesign = document.querySelector('.section__diagramm.InDesign').querySelector('.diagramm')
+				const diagramm_blender = document.querySelector('.section__diagramm.Blender').querySelector('.diagramm')
+
+				window.onscroll = function() {
+					if(250 < window.pageYOffset){
+						header.style.backgroundColor = '#222222';
+					}else{
+						header.style.backgroundColor = '';
+					};
+					if (2800 < window.pageYOffset) {
+						setTimeout(() => {
+							diagramm_photoshop.style.width = '90%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.width = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.width = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.width = '70%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.width = '60%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.width = '50%'
+						}, 100);
+					}else {
+						setTimeout(() => {
+							diagramm_photoshop.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.width = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.width = '0%'
+						}, 100);
+					}
+				}
+		    } else {
+				const diagramm_photoshop = document.querySelector('.section__diagramm.Photoshop').querySelector('.diagramm')
+				const diagramm_illustrator = document.querySelector('.section__diagramm.Illustrator').querySelector('.diagramm')
+				const diagramm_corelDraw = document.querySelector('.section__diagramm.CorelDraw').querySelector('.diagramm')
+				const diagramm_figma = document.querySelector('.section__diagramm.Figma').querySelector('.diagramm')
+				const diagramm_indesign = document.querySelector('.section__diagramm.InDesign').querySelector('.diagramm')
+				const diagramm_blender = document.querySelector('.section__diagramm.Blender').querySelector('.diagramm')
+				
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+					if(300 < window.pageYOffset){
+						header.style.backgroundColor = '#222222';
+					}else{
+						header.style.backgroundColor = '';
+					};
+					if (2300 < window.pageYOffset) {
+						setTimeout(() => {
+							diagramm_photoshop.style.height = '90%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.height = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.height = '80%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.height = '70%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.height = '60%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.height = '50%'
+						}, 100);
+					}else {
+						setTimeout(() => {
+							diagramm_photoshop.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_illustrator.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_figma.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_corelDraw.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_indesign.style.height = '0%'
+						}, 100);
+						setTimeout(() => {
+							diagramm_blender.style.height = '0%'
+						}, 100);
+					}
+				}
+		    }
+		}
+
+		handleResize();
+	</script>
+	<script src="/js/burger.js"></script>
+	<script src="/js/toggle-mode.js"></script>
+	<script>
+		const body = document.querySelector('#body')
+		const enter__logo = document.querySelector('#enter__logo')
+		const enter__animation = document.querySelector('.enter__animation')
+
+		if (sessionStorage.getItem('welcomeShown')) {
+            enter__animation.style.display = 'none';
+            body.style.overflowY = 'visible';
+        } else {
+        	sessionStorage.setItem('welcomeShown', 'true');
+
+	        body.style.overflowY = 'hidden';
+			setTimeout(() => {
+				enter__logo.style.opacity = '1';
+			}, 300);
+			setTimeout(() => {
+				enter__animation.style.opacity = '0';
+				setTimeout(() => {
+					enter__animation.style.display = 'none';
+					body.style.overflowY = 'visible';
+				}, 1000)
+			}, 2500);
+        }
+	</script>
+	<script>
+		let categoryLeft = document.getElementById('categoryLeft')
+		let categoryRight = document.getElementById('categoryRight')
+		
+		let cF1 = document.querySelector('.cF1')
+		let cF2 = document.querySelector('.cF2')
+		let cF3 = document.querySelector('.cF3')
+		let cF4 = document.querySelector('.cF4')
+		let cF5 = document.querySelector('.cF5')
+		let cF6 = document.querySelector('.cF6')
+		let cF7 = document.querySelector('.cF7')
+		let cF8 = document.querySelector('.cF8')
+		let cF9 = document.querySelector('.cF9')
+		
+		
+		
+		function handleResize() {
+		    if (window.matchMedia('(max-width: 1023px)').matches) {
+				cF1.style.marginLeft = '0'
+				cF2.style.marginLeft = '0'
+				cF3.style.marginLeft = '0'
+				cF4.style.marginLeft = '0'
+				cF5.style.marginLeft = '0'
+				cF6.style.marginLeft = '0'
+				cF7.style.marginLeft = '0'
+				cF8.style.marginLeft = '0'
+				cF9.style.marginLeft = '0'
+				
+				let currentScroll = 1
+				cF1.style.display = ''
+				cF2.style.display = ''
+				cF3.style.display = ''
+				cF4.style.display = 'none'
+				cF5.style.display = 'none'
+				cF6.style.display = 'none'
+				cF7.style.display = 'none'
+				cF8.style.display = 'none'
+				cF9.style.display = 'none'
+
+		    	categoryLeft.addEventListener('click', function() {
+		    		if (currentScroll === 1) {
+					}else if (currentScroll === 2){
+						cF1.style.display = ''
+						cF2.style.display = ''
+						cF3.style.display = ''
+						cF4.style.display = 'none'
+						cF5.style.display = 'none'
+						cF6.style.display = 'none'
+						cF7.style.display = 'none'
+						cF8.style.display = 'none'
+						cF9.style.display = 'none'
+
+						currentScroll = 1
+					}else if (currentScroll === 3){
+						cF1.style.display = 'none'
+						cF2.style.display = 'none'
+						cF3.style.display = 'none'
+						cF4.style.display = ''
+						cF5.style.display = ''
+						cF6.style.display = ''
+						cF7.style.display = 'none'
+						cF8.style.display = 'none'
+						cF9.style.display = 'none'
+						currentScroll = 2
+					}
+		    	});
+
+				categoryRight.addEventListener('click', function() {
+		    		if (currentScroll === 1) {
+		    			cF1.style.display = 'none'
+						cF2.style.display = 'none'
+						cF3.style.display = 'none'
+						cF4.style.display = ''
+						cF5.style.display = ''
+						cF6.style.display = ''
+						cF7.style.display = 'none'
+						cF8.style.display = 'none'
+						cF9.style.display = 'none'
+						currentScroll = 2
+					}else if (currentScroll === 2){
+						cF1.style.display = 'none'
+						cF2.style.display = 'none'
+						cF3.style.display = 'none'
+						cF4.style.display = 'none'
+						cF5.style.display = 'none'
+						cF6.style.display = 'none'
+						cF7.style.display = ''
+						cF8.style.display = ''
+						cF9.style.display = ''
+						currentScroll = 3
+					}else if (currentScroll === 3){
+					}
+		    	});
+
+		    } else {
+				cF1.style.marginLeft = '0px'
+				categoryLeft.addEventListener('click', function() {
+		    		if (cF1.style.marginLeft === 'calc(-195% + 83px)') {
+						cF1.style.marginLeft = 'calc(-95% - 17px)'
+					}else if (cF1.style.marginLeft === 'calc(-95% - 17px)'){
+						cF1.style.marginLeft = '0px'
+					}
+		    	});
+
+				categoryRight.addEventListener('click', function() {
+		    		if (cF1.style.marginLeft === '0px') {
+						cF1.style.marginLeft = 'calc(-95% - 17px)'
+					}else if (cF1.style.marginLeft === 'calc(-95% - 17px)'){
+						cF1.style.marginLeft = 'calc(-195% + 83px)'
+					}
+		    	});
+		    }
+		}
+
+		handleResize();
+	</script>
+	<script>
+		for (let i = 1; i <= 6; i++) {
+			document.getElementById('tp-' + i).addEventListener('input', function() {
+
+				for(let j = 1; j <= 6; j++){
+					document.querySelector('label[for="tp-' + j + '"]').classList.remove('checked');
+					document.getElementById('i__p-' + j).classList.remove('focus');
+				};
+
+				document.querySelector('label[for="tp-' + i + '"]').classList.add('checked');
+				document.getElementById('i__p-' + i).classList.add('focus');
+
+				if(i === 1){
+					document.getElementById('i__p-' + 1).style.marginTop = '12px'
+				}else if (i === 2){
+					document.getElementById('i__p-' + 1).style.marginTop = '12px'
+				}else if (i === 3){
+					document.getElementById('i__p-' + 1).style.marginTop = '-112px'
+				}else if (i === 4){
+					document.getElementById('i__p-' + 1).style.marginTop = '-236px'
+				}else if (i === 5){
+					document.getElementById('i__p-' + 1).style.marginTop = '-360px'
+				}else if (i === 6){
+					document.getElementById('i__p-' + 1).style.marginTop = '-360px'
+				}
+			});
+		};
+	</script>
+	<script>
+		document.querySelector('.s7Count').querySelector('input').addEventListener('input', function(){
+			let counter;
+			if (window.matchMedia('(max-width: 1023px)').matches) {
+				counter = document.querySelector('.s7Count').querySelector('input').value * 12
+			}else{
+				counter = document.querySelector('.s7Count').querySelector('input').value * 25
+			}
+			document.querySelector('.s7Brand').style.marginLeft = `-${counter}px`
+			// console.log(document.querySelector('.s7Count').querySelector('input').value)
+		})
+	</script>
+	<script>
+		for (let i = 1; i <= 6; i++) {
+			document.querySelector(`.item${i}`).querySelector('span').addEventListener('click', function(){
+				for (let j = 1; j <= 6; j++) {
+					document.querySelector(`.item${j}`).classList.remove('focus')
+				}
+				document.querySelector(`.item${i}`).classList.add('focus')
+			})
+		}
+	</script>
+	<script src="/js/reviewsSection.js"></script>
+</body>
+</html>
