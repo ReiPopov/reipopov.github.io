@@ -20,7 +20,12 @@ body.darkMode {
 .container.darkMode > .section__1 > h1,
 .container.darkMode > .section__2 > h1,
 .container.darkMode > .section__3 > h1,
-.container.darkMode > .section__4 > h1 {
+.container.darkMode > .section__4 > h1,
+.container.darkMode > .section__5 > h1,
+.container.darkMode > .section__6 > h1,
+.container.darkMode > .section__7 > h1,
+.container.darkMode > .section__8 > h1,
+.container.darkMode > .section__9 > h1 {
 	color: #a5a5a5;
 }
 
@@ -86,6 +91,14 @@ body.darkMode {
 }
 .container.darkMode > .CONTACT_ME > form > button {
 	background-color: #141414;
+	color: #a5a5a5;
+}
+
+.container.darkMode > section > .s6PC > .tables__progress > label,
+.container.darkMode > section > .s6PC > .item__progress > div::before,
+.container.darkMode > section > .s6PC > div > label,
+.container.darkMode > section > .s6Mobile > div::before {
+	background-color: #000;
 	color: #a5a5a5;
 }
 
