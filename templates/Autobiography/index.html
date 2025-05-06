@@ -330,7 +330,9 @@
 		    document.querySelectorAll('.block__interactive').forEach(element => {
 		        element.classList.remove('darkMode');
 		    });
-		    document.querySelector('.content__block').classList.remove('darkMode');
+		    document.querySelectorAll('.content__block').forEach((element) => {
+		    	element.classList.remove('darkMode');
+		    });
 		}
 
 		if (darkMode) {
