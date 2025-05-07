@@ -37,7 +37,11 @@ function updateSlider() {
 		slider.style.marginLeft = `0%`;
 		checkRevLab()
 	}else{
-		slider.style.marginLeft = `calc(-${currentPage * 350}px - ${currentPage * 20}px)`;
+		if (window.matchMedia('(max-width: 1023px)').matches) {
+			slider.style.marginLeft = `calc(-${currentPage * 350}px - ${currentPage * 20}px)`;
+		}else{
+			slider.style.marginLeft = `calc(-${currentPage * 100}% - ${currentPage * 20}px)`;
+		}
 		checkRevLab()
 	}
 }
