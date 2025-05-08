@@ -100,7 +100,6 @@
 	.section__3-skills {
 		display: flex;
 		flex-direction: column;
-		box-shadow: 0px 4px 6px rgb(5, 5, 5, 20%);
 		padding: 10px;
 		border-radius: 30px;
 		width: 100%;
@@ -128,14 +127,12 @@
 		justify-content: center;
 		align-items: flex-start;
 		padding: 10px;
-		box-shadow: 0px 0px 4px #393939;
 		transition: .5s;
 	}
 	.section__diagramm > div > img {
 		width: 28.5px;
 		height: 28.5px;
 		border-radius: 30px;
-		box-shadow: 0px 0px 4px #393939;
 	}
 
 
@@ -156,10 +153,6 @@
 		align-items: center;
 		padding: 20px 10px;
 		margin: 0;
-	}
-
-	.section__4 > div > .block__interactive:hover {
-		box-shadow: 0 0 0;
 	}
 
 	.section__4 > div > .block__interactive.review_1 {
@@ -220,7 +213,6 @@
 	z-index: -1;
 	border-radius: 30px;
 	transition: .3s;
-	box-shadow: 0px 4px 6px rgb(5, 5, 5, 20%);
 }
 
 .item__progress > div.focus::before {
@@ -229,7 +221,6 @@
 	position: absolute;
 	z-index: -1;
 	padding-right: 6px;
-	box-shadow: 0px 8px 12px rgb(5, 5, 5, 20%);
 }
 
 .item__progress > div > label {
@@ -269,7 +260,6 @@
 	}
 	.fullScreen__window > img{
 		width: 100%;
-		box-shadow: 0px 4px 8px #000;
 		z-index: 9;
 		border-radius: 0px;
 	}
