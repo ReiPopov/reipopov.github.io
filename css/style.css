@@ -299,6 +299,7 @@ main {
 
 #category__type > div > span.categorySelected {
 	background-color: #ffbe41;
+	color: #000;
 }
 
 #category__previews {
