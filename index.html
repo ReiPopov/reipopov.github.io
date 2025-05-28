@@ -20,42 +20,6 @@
 	<meta property="og:url" content="https://daulet050kz.github.io">
 	<meta property="og:type" content="website">
 
-	<style>
-		#category {
-			overflow-x: hidden;
-			flex-wrap: nowrap;
-			min-width: 350px;
-			max-height: auto;
-			width: 100%;
-		}
-		#categoryScroll > button {
-			margin: 0 5px;
-			background-color: #ffbe41;
-			border: none;
-			outline: none;
-			border-radius: 50%;
-			font-size: 22px;
-			font-weight: 700;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			cursor: pointer;
-			padding: 5px;
-		}
-
-		#category > a.block__interactive {
-			transition: 1s;
-		}
-
-		#category > a.block__interactive > img {
-			filter: grayscale(100%);
-		}
-
-		#category > a.block__interactive:hover > img {
-			filter: grayscale(0%);
-		}
-	</style>
 </head>
 <body id="body">
 	<header id="header">
@@ -122,52 +86,93 @@
 		<div class="container">
 			<section class="section__1">
 				<h1>КАТЕГОРИИ РАБОТ</h1>
-				<div id="category">
-					<a href="/templates/Art/page-1/index.html" class="block__interactive cF1" style="margin: 10px;">
-						<img src="img/categories/Preview-Art.jpg" alt="">
-						<h1>Арты</h1>
-					</a>
-					<a href="/templates/Drawings/page-1/index.html" class="block__interactive cF2" style="margin: 10px;">
-						<img src="img/categories/Preview-Drawings.jpg" alt="">
-						<h1>Рисунки</h1>
-					</a>
-					<a href="/templates/Design/page-1/index.html" class="block__interactive cF4" style="margin: 10px;">
-						<img src="img/categories/Preview-Design.jpg" alt="">
-						<h1>Дизайн</h1>
-					<a href="/templates/3D/page-1/index.html" class="block__interactive cF3" style="margin: 10px;">
-						<img src="img/categories/Preview-3D.jpg" alt="">
-						<h1>3D Работы</h1>
-					</a>
-					<a href="/templates/Lettering/page-1/index.html" class="block__interactive cF5" style="margin: 10px;">
-						<img src="img/categories/Preview-Lettering.jpg" alt="">
-						<h1>Леттеринг</h1>
-					</a>
-					<a href="/templates/UX/page-1/index.html" class="block__interactive cF6" style="margin: 10px;">
-						<img src="img/categories/Preview-UX.jpg" alt="">
-						<h1>Макеты сайтов</h1>
-					</a>
-					<a href="/templates/BookDesign/page-1/index.html" class="block__interactive cF7" style="margin: 10px;">
-						<img src="img/categories/Preview-BookDesign.jpg" alt="">
-						<h1>Дизайн книги</h1>
-					</a>
-					<a href="/templates/Logo/page-1/index.html" class="block__interactive cF8" style="margin: 10px;">
-						<img src="img/categories/Preview-Logo.jpg" alt="">
-						<h1>Логотипы</h1>
-					</a>
-					<a href="/templates/Blog/page-1/index.html" class="block__interactive cF9" style="margin: 10px;">
-						<img src="img/categories/Preview-Blog.jpg" alt="">
-						<h1>Блог</h1>
-					</a>
-				</div>
-				<div id="categoryScroll" style="flex-wrap: nowrap; flex-direction: row;">
-					<button id="categoryLeft">
-						<i class="fa-solid fa-arrow-left"></i>
-					</button>
-					<button id="categoryRight">
-						<i class="fa-solid fa-arrow-right"></i>
-					</button>
+				<div>
+					<div id="category__type">
+						<div>
+							<span id="category__type1" class="categorySelected">Арты</span>
+							<span id="category__type2">Рисунки</span>
+							<span id="category__type3">3D</span>
+							<span id="category__type4">Дизайн</span>
+						</div>
+
+						<div>
+							<span id="category__type5">Леттеринг</span>
+							<span id="category__type6">Логотипы</span>
+							<span id="category__type7">UI/UX</span>
+							<span id="category__type8">Книги</span>
+						</div>
+					</div>
+
+					<div id="category__previews">
+						<div class="category__previews-contens currentCategory" id="category__previews-1">
+							<a href="/templates/Art/page-1/index.html?id=image_1" class="block__interactive item" ><img src="/templates/Art/page-1/item_1.webp" alt="" id="image_1"><h1>Название</h1></a>
+							<a href="/templates/Art/page-1/index.html?id=image_2" class="block__interactive item"><img src="/templates/Art/page-1/item_2.webp" alt="" id="image_2"><h1>Название</h1></a>
+							<a href="/templates/Art/page-1/index.html?id=image_3" class="block__interactive item"><img src="/templates/Art/page-1/item_3.webp" alt="" id="image_3"><h1>Название</h1></a>
+
+							<div id="viewAll"><a href="/templates/Art/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-2">
+							<div class="block__interactive item"><img src="/templates/Drawings/page-1/item_1.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Drawings/page-1/item_2.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Drawings/page-1/item_3.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/Drawings/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-3">
+							<div class="block__interactive item"><img src="/templates/3D/page-1/item_1.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/3D/page-1/item_2.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/3D/page-1/item_3.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/3D/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-4">
+							<div class="block__interactive item"><img src="/templates/Design/page-1/ForumKyrgyztelecom/preview.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Design/page-1/GORYNYCH/preview.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Design/page-1/IcePeak/preview.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/Design/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-5">
+							<div class="block__interactive item"><img src="/templates/Lettering/page-1/Ethno/preview.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Lettering/page-1/OldSlavonic/preview.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Lettering/page-1/0/preview.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/Lettering/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-6">
+							<div class="block__interactive item"><img src="/templates/Logo/page-1/IPTV/preview.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Logo/page-1/CollectionLogo/preview.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/Logo/page-1/Visional/preview.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/Logo/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-7">
+							<div class="block__interactive item"><img src="/templates/UX/page-1/EkiDos/preview.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/UX/page-1/Kyrgyztelecom/preview.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/UX/page-1/Library/preview.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/UX/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						<div class="category__previews-contens nextCategory" id="category__previews-8">
+							<div class="block__interactive item"><img src="/templates/BookDesign/page-1/CrossArt/Page-0.webp" alt="" id="image_1"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/BookDesign/page-1/Kyrgyztelecom/Page-0.webp" alt="" id="image_2"><h1>Название</h1></div>
+							<div class="block__interactive item"><img src="/templates/BookDesign/page-1/DODO/Page-0.webp" alt="" id="image_3"><h1>Название</h1></div>
+
+							<div id="viewAll"><a href="/templates/BookDesign/page-1/index.html" class="button">Просмотреть все</a></div>
+						</div>
+
+						
+					</div>
 				</div>
 			</section>
+
 			<section class="section__2">
 				<h1>ОБ АВТОРЕ</h1>
 				<div>
@@ -198,15 +203,15 @@
 			<section class="section__5">
 				<h1>ПОЧЕМУ МНЕ ДОВЕРЯЮТ?</h1>
 				<div>
-					<div class="block__interactive" style="margin: 10px;">
+					<div class="block__interactive">
 						<div><div><span style="font-size: 42px; line-height: normal;" id="bi-1">5</span> <span style="font-size: 32px;">ЛЕТ</span></div> <span style="font-size: 24px;">РАБОТЫ</span></div>
 						<span style="text-align: center;">Разработал десятки брендов, сотни рекламных материалов. Работаю с крупными компаниями СНГ и стартапами, создавая уникальный стиль.</span>
 					</div>
-					<div class="block__interactive" style="margin: 10px;">
+					<div class="block__interactive">
 						<div><span style="font-size: 42px; line-height: normal;" id="bi-2">50+</span> <span style="font-size: 24px;">ПРОЕКТОВ</span></div>
 						<span style="text-align: center;">От логотипов и брендбуков до упаковки и рекламы — создаю работы, которые выделяют бизнес.</span>
 					</div>
-					<div class="block__interactive" style="margin: 10px;">
+					<div class="block__interactive">
 						<div><span style="font-size: 42px; line-height: normal;" id="bi-3">100+</span> <span style="font-size: 24px;">ДОВОЛЬНЫХ КЛИЕНТОВ</span></div>
 						<span style="text-align: center;">Работаю с малым бизнесом и крупными брендами, создавая дизайн, который приносит результат.</span>
 					</div>
@@ -391,6 +396,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="section__4" style="position: relative;">
 				<h1>ОТЗЫВЫ КЛИЕНТОВ</h1>
 				<div style="position: relative;" class="s4reviews">
@@ -756,122 +762,42 @@
 			}, 2500);
         }
 	</script>
+
 	<script>
-		let categoryLeft = document.getElementById('categoryLeft')
-		let categoryRight = document.getElementById('categoryRight')
-		
-		let cF1 = document.querySelector('.cF1')
-		let cF2 = document.querySelector('.cF2')
-		let cF3 = document.querySelector('.cF3')
-		let cF4 = document.querySelector('.cF4')
-		let cF5 = document.querySelector('.cF5')
-		let cF6 = document.querySelector('.cF6')
-		let cF7 = document.querySelector('.cF7')
-		let cF8 = document.querySelector('.cF8')
-		let cF9 = document.querySelector('.cF9')
-		
-		
-		
-		function handleResize() {
-		    if (window.matchMedia('(max-width: 1023px)').matches) {
-				cF1.style.marginLeft = '0'
-				cF2.style.marginLeft = '0'
-				cF3.style.marginLeft = '0'
-				cF4.style.marginLeft = '0'
-				cF5.style.marginLeft = '0'
-				cF6.style.marginLeft = '0'
-				cF7.style.marginLeft = '0'
-				cF8.style.marginLeft = '0'
-				cF9.style.marginLeft = '0'
-				
-				let currentScroll = 1
-				cF1.style.display = ''
-				cF2.style.display = ''
-				cF3.style.display = ''
-				cF4.style.display = 'none'
-				cF5.style.display = 'none'
-				cF6.style.display = 'none'
-				cF7.style.display = 'none'
-				cF8.style.display = 'none'
-				cF9.style.display = 'none'
+		let currentCategory = 1;
 
-		    	categoryLeft.addEventListener('click', function() {
-		    		if (currentScroll === 1) {
-					}else if (currentScroll === 2){
-						cF1.style.display = ''
-						cF2.style.display = ''
-						cF3.style.display = ''
-						cF4.style.display = 'none'
-						cF5.style.display = 'none'
-						cF6.style.display = 'none'
-						cF7.style.display = 'none'
-						cF8.style.display = 'none'
-						cF9.style.display = 'none'
+		for(let i = 1; i <= 8; i++){
+			document.getElementById(`category__type${i}`).addEventListener('click', function(){
 
-						currentScroll = 1
-					}else if (currentScroll === 3){
-						cF1.style.display = 'none'
-						cF2.style.display = 'none'
-						cF3.style.display = 'none'
-						cF4.style.display = ''
-						cF5.style.display = ''
-						cF6.style.display = ''
-						cF7.style.display = 'none'
-						cF8.style.display = 'none'
-						cF9.style.display = 'none'
-						currentScroll = 2
+				// Удаляем выделение у всех категорий
+				for(let j = 1; j <= 8; j++){
+					document.getElementById(`category__type${j}`).classList.remove('categorySelected');
+				}
+
+				// Выделяем выбранную категорию
+				document.getElementById(`category__type${i}`).classList.add('categorySelected');
+
+				// Обновляем классы превью элементов
+				for(let j = 1; j <= 8; j++){
+					const preview = document.getElementById(`category__previews-${j}`);
+					
+					preview.classList.remove('currentCategory', 'prewCategory', 'nextCategory');
+
+					if (j < i) {
+						preview.classList.add('prewCategory');
+					} else if (j > i) {
+						preview.classList.add('nextCategory');
+					} else {
+						preview.classList.add('currentCategory');
 					}
-		    	});
+				}
 
-				categoryRight.addEventListener('click', function() {
-		    		if (currentScroll === 1) {
-		    			cF1.style.display = 'none'
-						cF2.style.display = 'none'
-						cF3.style.display = 'none'
-						cF4.style.display = ''
-						cF5.style.display = ''
-						cF6.style.display = ''
-						cF7.style.display = 'none'
-						cF8.style.display = 'none'
-						cF9.style.display = 'none'
-						currentScroll = 2
-					}else if (currentScroll === 2){
-						cF1.style.display = 'none'
-						cF2.style.display = 'none'
-						cF3.style.display = 'none'
-						cF4.style.display = 'none'
-						cF5.style.display = 'none'
-						cF6.style.display = 'none'
-						cF7.style.display = ''
-						cF8.style.display = ''
-						cF9.style.display = ''
-						currentScroll = 3
-					}else if (currentScroll === 3){
-					}
-		    	});
-
-		    } else {
-				cF1.style.marginLeft = '0px'
-				categoryLeft.addEventListener('click', function() {
-		    		if (cF1.style.marginLeft === 'calc(-195% + 83px)') {
-						cF1.style.marginLeft = 'calc(-95% - 17px)'
-					}else if (cF1.style.marginLeft === 'calc(-95% - 17px)'){
-						cF1.style.marginLeft = '0px'
-					}
-		    	});
-
-				categoryRight.addEventListener('click', function() {
-		    		if (cF1.style.marginLeft === '0px') {
-						cF1.style.marginLeft = 'calc(-95% - 17px)'
-					}else if (cF1.style.marginLeft === 'calc(-95% - 17px)'){
-						cF1.style.marginLeft = 'calc(-195% + 83px)'
-					}
-		    	});
-		    }
+				currentCategory = i;
+			});
 		}
-
-		handleResize();
 	</script>
+
+
 	<script>
 		for (let i = 1; i <= 6; i++) {
 			document.getElementById('tp-' + i).addEventListener('input', function() {
