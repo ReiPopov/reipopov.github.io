@@ -105,7 +105,7 @@
 	#category__previews {
 		display: flex;
 		width: 100%;
-		height: calc(250px * 3 + 200px);
+		height: calc(250px * 3 + 115px);
 		position: relative;
 		overflow: hidden;
 	}
