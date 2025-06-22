@@ -78,41 +78,41 @@
 		<div class="container">
 			<section class="section__1">
 				<div>
-					<a href='TVBanners/index.html' class="block__interactive item">
-					    <img src="TVBanners/preview.webp">
-					    <h1>ТВ Баннеры</h1>
-					</a>
-					<a href='Cinematics/index.html' class="block__interactive item">
-					    <img src="Cinematics/preview.webp">
-					    <h1>Сеть кинотеатров "Синематика"</h1>
-					</a>
-					<a href='KurazhBeer/index.html' class="block__interactive item">
-					    <img src="KurazhBeer/preview.webp">
-					    <h1>Пиво Кураж</h1>
-					</a>
-					<a href='RedesignGorynych/index.html' class="block__interactive item">
-					    <img src="RedesignGorynych/preview.webp">
-					    <h1>Редизайн острого соуса Горыныч</h1>
-					</a>
-					<a href='Morse/index.html' class="block__interactive item">
-					    <img src="Morse/preview.webp">
-					    <h1>Морс</h1>
-					</a>
-					<a href='BekemBlock/index.html' class="block__interactive item">
-					    <img src="BekemBlock/preview.webp">
+					<a href='' class="block__interactive item">
+					    <img src="" id="image_1">
 					    <h1>BEKEMBLOCK</h1>
 					</a>
-					<a href='BekemblockPapers/index.html' class="block__interactive item">
-					    <img src="BekemblockPapers/preview.webp">
+					<a href='' class="block__interactive item">
+					    <img src="" id="image_2">
 					    <h1>BEKEMBLOCK Брошуры</h1>
 					</a>
-					<a href='Profib/index.html' class="block__interactive item">
-					    <img src="Profib/preview.webp">
+					<a href='' class="block__interactive item">
+					    <img src="" id="image_3">
+					    <h1>Сеть кинотеатров "Синематика"</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Пиво Кураж</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Морс</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
 					    <h1>Profib</h1>
 					</a>
-					<a href='TheWhiteRiver/index.html' class="block__interactive item">
-					    <img src="TheWhiteRiver/preview.webp">
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Редизайн острого соуса Горыныч</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
 					    <h1>Белая река</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>ТВ Баннеры</h1>
 					</a>
 				</div>
 			</section>
@@ -120,6 +120,7 @@
 				<a href="../page-1/index.html" class="page-link">1</a>
 				<a href="../page-2/index.html" class="page-link">2</a>
 				<a href="../page-3/index.html" class="page-link active">3</a>
+				<a href="../page-4/index.html" class="page-link">4</a>
 			</div>
 		</div>
 	</main>
@@ -139,5 +140,16 @@
 	<script src="/js/toggle-mode.js"></script>
 	<script src="/js/burger.js"></script>
 	<script src="/js/header.js"></script>
+
+	<script src="/js/fromMainPageToOther__category.js"></script>
+
+	<script>
+		const blockAutoLink = document.querySelectorAll('.section__1 div a');
+		blockAutoLink.forEach((link, index) => {
+			link.href = `DesignPageItem${index + 1}/index.html`;
+			link.querySelector('img').src = `DesignPageItem${index + 1}/preview.webp`;
+		});
+	</script>
+	
 </body>
 </html>

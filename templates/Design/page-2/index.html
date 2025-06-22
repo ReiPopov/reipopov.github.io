@@ -78,41 +78,41 @@
 		<div class="container">
 			<section class="section__1">
 				<div>
-					<a href='ArtbookCrossArt/index.html' class="block__interactive item">
-					    <img src="ArtbookCrossArt/preview.webp">
-					    <h1>Артбук CROSS ART</h1>
-					</a>
-					<a href='BrandbookKyrgyztelecom/index.html' class="block__interactive item">
-					    <img src="BrandbookKyrgyztelecom/preview.webp">
-					    <h1>Брендбук Kyrgyztelecom</h1>
-					</a>
-					<a href='BrandbookRestaurantYurta/index.html' class="block__interactive item">
-					    <img src="BrandbookRestaurantYurta/preview.webp">
-					    <h1>Брендбук ресторана Юрта</h1>
-					</a>
-					<a href='BannersForKyrgyztelecom/index.html' class="block__interactive item">
-					    <img src="BannersForKyrgyztelecom/preview.webp">
-					    <h1>Баннеры для сайта Kyrgyztelecom</h1>
-					</a>
-					<a href='GamblingJournal/index.html' class="block__interactive item">
-					    <img src="GamblingJournal/preview.webp">
-					    <h1>Журнал игромания</h1>
-					</a>
-					<a href='MenuDODO/index.html' class="block__interactive item">
-					    <img src="MenuDODO/preview.webp">
-					    <h1>Меню Додо</h1>
-					</a>
-					<a href='AddBanners/index.html' class="block__interactive item">
-					    <img src="AddBanners/preview.webp">
+					<a href='' class="block__interactive item">
+					    <img src="" id="image_1">
 					    <h1>Рекламные баннеры</h1>
 					</a>
-					<a href='MenuRestaurantSeafood/index.html' class="block__interactive item">
-					    <img src="MenuRestaurantSeafood/preview.webp">
-					    <h1>Меню ресторана морепродуктов</h1>
+					<a href='' class="block__interactive item">
+					    <img src="" id="image_2">
+					    <h1>Артбук Cross Art</h1>
 					</a>
-					<a href='MenuRestaurantSushi/index.html' class="block__interactive item">
-					    <img src="MenuRestaurantSushi/preview.webp">
-					    <h1>Меню ресторана суши</h1>
+					<a href='' class="block__interactive item">
+					    <img src="" id="image_3">
+					    <h1>Баннеры для Кыргызтелеком</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Брендбук Кыргызтелеком</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Брендбук Юрта</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Журнал игромания</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Меню Додо</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Меню рест. морепродуктов</h1>
+					</a>
+					<a href='' class="block__interactive item">
+					    <img src="">
+					    <h1>Меню рест. суши</h1>
 					</a>
 				</div>
 			</section>
@@ -120,6 +120,7 @@
 				<a href="../page-1/index.html" class="page-link">1</a>
 				<a href="../page-2/index.html" class="page-link active">2</a>
 				<a href="../page-3/index.html" class="page-link">3</a>
+				<a href="../page-4/index.html" class="page-link">4</a>
 			</div>
 		</div>
 	</main>
@@ -139,5 +140,16 @@
 	<script src="/js/toggle-mode.js"></script>
 	<script src="/js/burger.js"></script>
 	<script src="/js/header.js"></script>
+
+	<script src="/js/fromMainPageToOther__category.js"></script>
+
+	<script>
+		const blockAutoLink = document.querySelectorAll('.section__1 div a');
+		blockAutoLink.forEach((link, index) => {
+			link.href = `DesignPageItem${index + 1}/index.html`;
+			link.querySelector('img').src = `DesignPageItem${index + 1}/preview.webp`;
+		});
+	</script>
+	
 </body>
 </html>

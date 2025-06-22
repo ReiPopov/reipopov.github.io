@@ -770,7 +770,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 30px;
+	margin: 0 15px;
 }
 
 .s7Brand > img {
